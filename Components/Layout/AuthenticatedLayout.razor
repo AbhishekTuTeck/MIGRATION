@@ -1,0 +1,55 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page p-0 w-100">
+    <main class="px-0 py-0 w-100">
+        <div class="navbar m-0 p-0 w-100 custom-badge position-fixed top-0" style="z-index:9;">
+            <div class="navbar-brand d-flex align-items-center custom-badge">
+                <div class="logo ps-3 me-3">
+                    <img src="/images/mospi_updated_logo.svg" alt="nsso Logo" height="60">
+                </div>
+                <small class="m-0 badge badge-outline badge-primary">Migration V:1.3</small>
+
+              
+            </div>
+            <ul class="navbar-nav ms-auto">
+             
+             
+                <li class="nav-item">
+                    <NavLink class="P-3" @onclick="@(() => navigationManager.NavigateTo("/index"))">
+                        <i class="fi fi-rr-home fs-20"></i>
+                    </NavLink>
+                </li>
+                <li class="nav-item user-dropdown dropdown">
+                    <a class="nav-link d-flex align-items-center dropdown-toggle" href="#" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="user-panel d-flex align-items-center">
+                            <div class="image avatar-latter color6">
+                                A
+                            </div>
+                            <div class="info d-none d-sm-block">
+                                <div class="info">
+                                    <div class="info-name">Abhishek Ghosh</div>
+                                    <small>AA - INVST</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu rounded-3" aria-labelledby="languageDropdown">
+                        <li>
+                            <a class="dropdown-item notify-item  mt-0"><i class="fi fi-rr-cloud-upload-alt align-middle me-2"></i> Export DB</a>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li>
+                            <NavLink class="dropdown-item notify-item  mt-0" @onclick="@(() => navigationManager.NavigateTo("/index"))">
+                                <i class="fi fi-ss-sign-out-alt align-middle me-2"></i> Logout
+                            </NavLink>
+                        </li>
+                    </ul>
+                </li>
+                @* <ThemeSwitcher /> *@
+            </ul>
+        </div>
+        <article class="main-content-wrapper pb-3 px-3" style="padding-top:73px;">
+            @Body
+        </article>
+    </main>
+</div>

@@ -1,0 +1,37 @@
+﻿@page "/"
+<section class="login-bg py-3 py-md-5">
+	<div class="container">
+		<div class="row justify-content-sm-center">
+			<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-10">
+                <div class="card shadow-lg incomeLogincard">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="/images/mospi_updated_logo.svg" alt="nsso Logo"  class="img-fluid">
+                        </div>
+                        <hr/>
+                        <h6 class="fw-bolder text-primary mb-2 mt-3">National Statistics Office</h6>
+                        <p class="text-dark fw-bold text-uppercase mb-1">SOCIO-ECONOMIC SURVEY Login</p>
+                        <p class="text-muted">
+                            EIGHTY-ONE ROUND: JULY 2026 – JUNE 2027  <br /> SCHEDULE 10.3: MIGRATION PARTICULARS  
+                        </p>
+                     
+                        @* <h1 class="fs-4 card-title fw-bold mb-1">Welcome Back !</h1>
+                        <p class="mb-3 fs-4">Login</p> *@
+                        <div class="mb-3">
+                         <label class="form-label">Username</label>
+            <input type="text" class="form-control" placeholder="Enter username" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Enter password" />
+                        </div>
+                        <button class="btn btn-primary w-100 mt-2 d-flex justify-content-center" @onclick="@(() => navigationManager.NavigateTo("/index"))">Login</button>
+                        <small class="text-muted text-center d-block mt-2">App Version:8.7</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

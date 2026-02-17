@@ -1,0 +1,441 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\scopedcss\\bundle\\Migration.styles.css",
+      "PackagePath": "staticwebassets\\Migration.styles.css"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\css\\app.less",
+      "PackagePath": "staticwebassets\\css\\app.less"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\css\\app2.css",
+      "PackagePath": "staticwebassets\\css\\app2.css"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\css\\bootstrap\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\css\\variable.css",
+      "PackagePath": "staticwebassets\\css\\variable.css"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\css\\variable.less",
+      "PackagePath": "staticwebassets\\css\\variable.less"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-bold-rounded.css",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-bold-rounded.css"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-bold-rounded.eot",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-bold-rounded.eot"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-bold-rounded.woff",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-bold-rounded.woff"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-bold-rounded.woff2",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-bold-rounded.woff2"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-regular-chubby.css",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-regular-chubby.css"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-regular-chubby.eot",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-regular-chubby.eot"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-regular-chubby.woff",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-regular-chubby.woff"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-regular-chubby.woff2",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-regular-chubby.woff2"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-regular-rounded.css",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-regular-rounded.css"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-regular-rounded.eot",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-regular-rounded.eot"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-regular-rounded.woff",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-regular-rounded.woff"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-regular-rounded.woff2",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-regular-rounded.woff2"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-solid-straight.css",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-solid-straight.css"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-solid-straight.eot",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-solid-straight.eot"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-solid-straight.woff",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-solid-straight.woff"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\flaticon\\uicons-solid-straight.woff2",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\uicons-solid-straight.woff2"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\OFL.txt",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\README.txt",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\README.txt"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\Roboto-Italic-VariableFont_wdth,wght.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\Roboto-Italic-VariableFont_wdth,wght.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\Roboto-VariableFont_wdth,wght.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\Roboto-VariableFont_wdth,wght.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-Black.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Black.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Light.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_Condensed-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_Condensed-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Black.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Light.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\google\\Roboto\\static\\Roboto_SemiCondensed-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\images\\bg-login.svg",
+      "PackagePath": "staticwebassets\\images\\bg-login.svg"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\images\\lock.svg",
+      "PackagePath": "staticwebassets\\images\\lock.svg"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo.svg"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\images\\logomain.svg",
+      "PackagePath": "staticwebassets\\images\\logomain.svg"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\images\\mospi_updated_logo.svg",
+      "PackagePath": "staticwebassets\\images\\mospi_updated_logo.svg"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\images\\nsoRoundLogo.png",
+      "PackagePath": "staticwebassets\\images\\nsoRoundLogo.png"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\images\\nsso75logo.svg",
+      "PackagePath": "staticwebassets\\images\\nsso75logo.svg"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\images\\satellite.png",
+      "PackagePath": "staticwebassets\\images\\satellite.png"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\images\\sitIndiaGovtLogo.png",
+      "PackagePath": "staticwebassets\\images\\sitIndiaGovtLogo.png"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\js\\NetworkService\\NetworkService.js",
+      "PackagePath": "staticwebassets\\js\\NetworkService\\NetworkService.js"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\js\\NetworkService\\axios.min.js",
+      "PackagePath": "staticwebassets\\js\\NetworkService\\axios.min.js"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\js\\NetworkService\\interceptor.js",
+      "PackagePath": "staticwebassets\\js\\NetworkService\\interceptor.js"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\js\\inputFilter.js",
+      "PackagePath": "staticwebassets\\js\\inputFilter.js"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\js\\noEmoji.js",
+      "PackagePath": "staticwebassets\\js\\noEmoji.js"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Sourcetree\\MIGRATION\\gitMigration\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\abhishek.ghosh\\.nuget\\packages\\microsoft.aspnetcore.components.webview\\10.0.0\\staticwebassets\\blazor.modules.json",
+      "PackagePath": "staticwebassets\\_framework\\blazor.modules.json"
+    },
+    {
+      "Id": "C:\\Users\\abhishek.ghosh\\.nuget\\packages\\microsoft.aspnetcore.components.webview\\10.0.0\\staticwebassets\\blazor.webview.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webview.js"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\staticwebassets\\msbuild.Migration.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\staticwebassets\\msbuild.Migration.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\staticwebassets\\msbuild.build.Migration.props",
+      "PackagePath": "build\\Migration.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\staticwebassets\\msbuild.buildMultiTargeting.Migration.props",
+      "PackagePath": "buildMultiTargeting\\Migration.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\staticwebassets\\msbuild.buildTransitive.Migration.props",
+      "PackagePath": "buildTransitive\\Migration.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

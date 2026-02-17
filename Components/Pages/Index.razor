@@ -1,0 +1,86 @@
+﻿@page "/index"
+
+<section class="login-bg">
+	<div class="container">
+		<div class="row justify-content-sm-center">
+			<div class="col-xxl-5 col-xl-6 col-lg-6 col-md-8 col-sm-12">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <img src="/images/mospi_updated_logo.svg" alt="nsso Logo"  class="img-fluid" width="250">
+                            <div class="ms-auto">
+                                <button class="btn btn-outline-secondary d-flex justify-content-center" @onclick="@(() => navigationManager.NavigateTo("/"))"><i class="fi fi-rr-power me-1"></i> Logout</button>
+                            </div>
+                        </div>
+                        <div class="">
+                             <div class="user-panel d-flex align-items-center my-4">
+                            <div class="image avatar-latter color2">
+                                AG
+                            </div>
+                            <div class="info d-block mt-2">
+                                <div class="info text-left">
+                                    <div class="info-name">Abhishek Ghosh</div>
+                                    <small class="text-muted">ADQ-456367</small>
+                                </div>
+                            </div>
+                        </div>
+                            <h6 class="fw-bolder  mb-2 mt-4">National Statistics Office</h6>
+                            <h4 class="fw-semibold mb-3 d-block">Welcome to Socio-Economic Migration Survey</h4>
+                            @* <p class="fs-6">
+                                EIGHTY FIRST ROUND: JULY, 2026 TO JUNE, 2027 <br /> HOUSEHOLD SCHEDULE 18.2: DEBT AND INVESTMENT 
+                            </p> *@
+                        
+                        </div>
+                     
+                        <p class="mt-4">Please Select a Option:</p>
+                     
+                      
+                        <NavLink class="info-card d-flex align-items-center" @onclick="@(() => navigationManager.NavigateTo("/fsulist"))">
+                            <div class="icon-box primary">
+                                <i class="fi fi-rr-file-edit"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-semibold mb-1 text-dark">Survey FSU</h6>
+                                <p class="mb-0 text-muted small">
+                                    Start Survey with FSU List
+                                </p>
+                            </div>
+                              <div class="ms-auto d-flex align-content-center">
+                                <span class="badge bg-primary me-2">10</span>
+                                <i class="fi fi-br-angle-right fs-6 text-muted"></i>
+                            </div>
+                        </NavLink>
+                        <NavLink class="info-card d-flex align-items-center">
+                            <div class="icon-box">
+                                <i class="fi fi-br-dashboard"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-semibold text-dark mb-1">Dashboard</h6>
+                                <p class="mb-0 text-muted small">
+                                    Household SCHEDULE 18.2: Debt & Investment
+                                </p>
+                            </div>
+                            <i class="fi fi-br-angle-right fs-6 text-muted ms-auto"></i>
+                        </NavLink>
+                        <NavLink class="info-card d-flex align-items-center">
+                            <div class="icon-box primary1">
+                                <i class="fi fi-rr-comment-alt"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="mb-1 fw-semibold text-dark">Referred Back</h6>
+                                <p class="mb-0 text-muted small">
+                                    Referred Back from FSU
+                                </p>
+                            </div>
+                            <div class="ms-auto d-flex align-content-center">
+                                <span class="badge bg-danger me-2">3</span>
+                                <i class="fi fi-br-angle-right fs-6 text-muted"></i>
+                            </div>
+                        </NavLink>
+                        <small class="text-muted mt-3 text-center w-100 d-block">Version : v23.7</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
