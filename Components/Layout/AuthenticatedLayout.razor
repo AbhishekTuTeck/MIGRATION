@@ -1,8 +1,10 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page p-0 w-100">
+@if(is_visible)
+{
+    <div class="page p-0 w-100">
     <main class="px-0 py-0 w-100">
-        <div class="navbar m-0 p-0 w-100 custom-badge position-fixed top-0" style="z-index:9;">
+        <div class="navbar m-0 p-0 w-100 custom-badge position-fixed" style="z-index:9;">
             <div class="navbar-brand d-flex align-items-center custom-badge">
                 <div class="logo ps-3 me-3">
                     <img src="/images/mospi_updated_logo.svg" alt="nsso Logo" height="60">
@@ -46,10 +48,42 @@
                     </ul>
                 </li>
                 @* <ThemeSwitcher /> *@
-            </ul>
+                </ul>
+         
         </div>
-        <article class="main-content-wrapper pb-3 px-3" style="padding-top:73px;">
+        <article class="main-content-wrapper">
             @Body
         </article>
     </main>
 </div>
+}
+else
+{
+    @Body
+}
+
+
+@code {
+    bool is_visible = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        navigationManager.LocationChanged += OnLocationChanged;
+        StateHasChanged();
+        return;
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        var route = navigationManager.ToBaseRelativePath(e.Location);
+        if (route == "index")
+        {
+            is_visible = false;
+            StateHasChanged();
+            return;
+        }
+        is_visible = true;
+        StateHasChanged();
+        return;
+    }
+}

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Blazored.Toast;
+using Microsoft.Extensions.Logging;
 
 namespace Migration
 {
@@ -15,10 +16,13 @@ namespace Migration
                 });
 
             builder.Services.AddMauiBlazorWebView();
+            builder.Services.AddBlazoredToast();
+            builder.Services.AddBlazorBootstrap();
 
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
+
 #endif
 
             return builder.Build();

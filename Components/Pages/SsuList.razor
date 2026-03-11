@@ -1,0 +1,342 @@
+﻿@page "/ssulist"
+@layout Migration.Components.Layout.AuthenticatedLayout
+
+<div class="main-content">
+
+
+	<!-- Page Header (Outside Card) -->
+
+	<div class="d-flex align-items-center mb-3">
+		<NavLink class="btn btn-outline-secondary btn-sm me-2" @onclick="@(() => navigationManager.NavigateTo("/fsulist"))">
+			<i class="fi fi-rr-angle-left fs-15"></i>
+		</NavLink>
+		<div class="d-flex align-items-center w-100">
+			<h3 class="page-heading m-0 me-3">  FSUID: <strong class="me-2">#64646</strong></h3>
+			<div class="badge d-flex align-items-center fs-14 text-mutes ms-auto bg-white border-1 border border-secondary rounded px-2 text-dark">
+				<i class="bi bi-circle-fill text-success me-1 fs-7"></i> Visit 1
+			</div>
+		</div>
+	</div>
+
+	<div class="card custom-card">
+		<div class="card-header">
+			<h3 class="card-title">
+				Selected Sampling Units list
+			</h3>
+			<div class="card-tools">
+				<button class="btn btn-secondary btn-sm">
+					<i class="fi fi-rr-print me-1"></i> Print
+				</button>
+			</div>
+		</div>
+
+
+		<div class="card-body p-0">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped mb-0 custom-badge align-middle">
+					<thead>
+						<tr>
+							<th>
+								<div class="siteCustomCheckbox">
+									<label>
+										<input type="checkbox" checked="">
+									</label>
+								</div>
+							</th>
+
+							<th>SU</th>
+							<th>SSS</th>
+							<th>
+								Sample
+								HHD Srl.
+							</th>
+							<th>
+								HHD
+								Serial
+							</th>
+							<th>HHD Head</th>
+							<th>HHD Size</th>
+							<th>
+								Household
+								Status
+							</th>
+							<th>
+								No. of
+								Substitution
+							</th>
+							<th>Survey Status</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+
+
+							<td>
+								<div class="siteCustomCheckbox">
+									<label>
+										<input type="checkbox" checked="">
+									</label>
+								</div>
+							</td>
+
+
+
+
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>Ravi</td>
+							<td>1</td>
+							<td>
+								<div class="d-flex align-items-center fs-12 text-blue mt-2">
+									<i class="bi bi-circle-fill text-success me-1 fs-7"></i> Orginal (O)
+								</div>
+							</td>
+							<td>9</td>
+
+
+
+
+							<td>
+
+								<div class="badge badge-success">Submitted</div>
+							</td>
+
+
+							<td>
+								<div class="d-flex align-items-center">
+
+									<NavLink class="btn btn-outline-primary btn-sm" @onclick="@(() => navigationManager.NavigateTo("/sch10.1-block-1"))"><i class="fi fi-rr-arrow-right"></i></NavLink>
+
+
+								</div>
+							</td>
+						</tr>
+						<tr>
+
+
+							<td>
+								<div class="siteCustomCheckbox">
+									<label>
+										<input type="checkbox" checked="">
+									</label>
+								</div>
+							</td>
+
+
+
+
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>Ravi</td>
+							<td>3</td>
+
+							<td>
+								<div class="d-flex align-items-center fs-12 text-blue mt-2">
+									<i class="bi bi-circle-fill text-danger me-1 fs-7"></i> Casuality (C)
+								</div>
+							</td>
+
+							<td>-</td>
+							<td>
+
+								<div class="badge badge-warning text-dark">Ongoing</div>
+							</td>
+
+							<td>
+								<div class="d-flex align-items-center">
+
+									<NavLink class="btn btn-outline-primary btn-sm" @onclick="@(() => navigationManager.NavigateTo("/sch10.1-block-1"))"><i class="fi fi-rr-arrow-right"></i></NavLink>
+
+
+								</div>
+							</td>
+						</tr>
+						<tr>
+
+
+							<td>
+								<div class="siteCustomCheckbox">
+									<label>
+										<input type="checkbox" checked="">
+									</label>
+								</div>
+							</td>
+
+
+
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>Ravi</td>
+							<td>3</td>
+
+							<td>
+								<div class="d-flex align-items-center fs-12 text-blue mt-2">
+									<i class="bi bi-circle-fill text-danger me-1 fs-7"></i> Casuality (C)
+								</div>
+							</td>
+
+							<td>-</td>
+
+
+							<td>
+
+								<div class="badge bg-primary">Asign to ENM.</div>
+							</td>
+
+							<td>
+								<div class="d-flex align-items-center">
+
+									<NavLink class="btn btn-outline-primary btn-sm" @onclick="@(() => navigationManager.NavigateTo("/sch10.1-block-1"))"><i class="fi fi-rr-arrow-right"></i></NavLink>
+
+
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</div>
+	<div class="footer">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="d-flex">
+					<NavLink class="btn btn-outline-secondary me-2" @onclick="@(() => navigationManager.NavigateTo("/fsulist"))"><i class="fi fi-rr-angle-left me-1"></i>Back</NavLink>
+					<NavLink class="btn btn-outline-success bg-white me-2" data-bs-toggle="modal" data-bs-target="#validationModal">Validate<i class="fi fi-rr-memo-circle-check ms-1"></i></NavLink>
+					@* <NavLink class="btn btn-outline-primary disabled">Download<i class="fi fi-rr-download ms-1"></i></NavLink> *@
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="d-flex justify-content-end">
+
+					<button class="btn btn-primary">Submit to SSO<i class="fi fi-rr-arrow-right ms-1"></i></button>
+
+
+
+
+					@* <button class="btn btn-danger me-2">
+						<i class="fi fi-rr-undo me-1"></i>
+						Refer back to ENM
+					</button>
+
+					<button class="btn btn-primary"
+							>
+						Submit to DS<i class="fi fi-rr-arrow-right ms-1"></i>
+					</button>
+				
+				
+					<button class="btn btn-primary" >Refer back to SSO<i class="fi fi-rr-arrow-right ms-1"></i></button> *@
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="validationModal" tabindex="-1" aria-labelledby="validationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="validationModalLabel">Validate</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <!-- Warnings Section -->
+<div class="card border-warning mb-4">
+  <div class="card-header bg-warning-subtle d-flex align-items-center gap-2">
+   <span class="rounded-circle bg-warning text-dark d-flex align-items-center justify-content-center"
+          style="width:36px;height:36px;">
+      <i class="fi fi-rr-triangle-warning"></i>
+    </span>
+    <div>
+      <h6 class="mb-0 fw-semibold">6 Warning Found</h6>
+      <small class="text-muted">Validation failed – Please Fix all Warning</small>
+    </div>
+  </div>
+
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover mb-0 align-middle">
+        <thead class="table-warning">
+          <tr>
+            <th style="width:80px">Sl No.</th>
+            <th>Warning Description</th>
+            <th style="width:90px">Row No</th>
+            <th style="width:80px">Block</th>
+            <th style="width:80px" class="text-center">Warning</th>
+            <th style="width:180px">Remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>First 4 Digit (Item 4) of NIC 5 Digit (Item 5) is not matching</td>
+            <td>5</td>
+            <td>A</td>
+            <td class="text-center text-warning">⚠</td>
+            <td><input type="text" class="form-control form-control-sm" value="OK"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Errors Section -->
+<div class="card border-danger">
+  <div class="card-header bg-danger-subtle d-flex align-items-center gap-2">
+    <span class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center"
+          style="width:36px;height:36px;">
+      <i class="fi fi-rr-cross-circle"></i>
+    </span>
+    <div>
+      <h6 class="mb-0 fw-semibold">3 Errors Found</h6>
+      <small class="text-muted">Validation failed – Please Fix all Error</small>
+    </div>
+  </div>
+
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover mb-0 align-middle">
+        <thead class="table-danger">
+          <tr>
+            <th style="width:80px">Sl No.</th>
+            <th>Error Description</th>
+            <th style="width:90px">Row No</th>
+            <th style="width:80px">Block</th>
+            <th style="width:80px" class="text-center">Error</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>First 4 Digit (Item 4) of NIC 5 Digit (Item 5) is not matching</td>
+            <td>5</td>
+            <td>A</td>
+            <td class="text-center text-danger"> <i class="fi fi-rr-cross-circle"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+@code {
+
+}
