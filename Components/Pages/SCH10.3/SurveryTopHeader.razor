@@ -1,0 +1,84 @@
+@inject Migration.Services.ILocationService LocationService
+@inject NavigationManager navigationManager
+
+<!-- Top Header -->
+<div>
+    <div class="d-flex align-items-center mb-3">
+        <NavLink class="btn btn-outline-secondary btn-sm me-2" @onclick="@(() => navigationManager.NavigateTo("/ssulist"))">
+            <i class="fi fi-rr-angle-left fs-15"></i>
+        </NavLink>
+        <div class="d-flex align-items-center">
+            <h3 class="page-heading m-0 me-3">  FSUID: <strong class="me-2">#646465</strong> | SSUID: 1,2,5</h3>
+        </div>
+    </div>
+    <div class="card custom-card">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-start">
+                    <div class="text-center rounded-circle border">
+                        <img src="/images/satellite.png" class="rounded-circle" width="40" alt="satellite">
+                    </div>
+                    <div class="ms-2">
+                        <small class="fs-13 mb-0">Coordinate</small>
+                        <p class="mb-0 fw-bolder">
+
+                            @if (_lastGPSReading != null)
+                            {
+                                @FormatLatLong(_lastGPSReading.Latitude, _lastGPSReading.Longitude)
+                            }
+
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start">
+                    <div class="ms-2">
+                        <small class="fs-13 mb-0">Timestamp</small>
+                        <p class="mb-0 fw-bolder">
+                            @FormatTimestamp(_lastGPSReading?.TimestampUtc)
+
+                        </p>
+                    </div>
+                </div>
+                <div class="form-group w-25">
+                    <label class="form-label">Switch To Visited Block</label>
+                    <select class="form-select form-select-sm w-100" id="exampleFormControlSelect1">
+                        <option value="">Select</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Top Header -->
+@code {
+    private Migration.Services.GpsReading? _lastGPSReading;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _lastGPSReading = await LocationService.GetCurrentAsync(
+            accuracy: Microsoft.Maui.Devices.Sensors.GeolocationAccuracy.High, // GPS when available
+            timeout: TimeSpan.FromSeconds(10),
+            includeLastKnownFallback: true);
+    }
+
+    public static string FormatLatLong(double latitude, double longitude)
+    {
+        string latDir = latitude >= 0 ? "N" : "S";
+        string lonDir = longitude >= 0 ? "E" : "W";
+
+        return $"{Math.Abs(latitude):0.0000}° {latDir}, {Math.Abs(longitude):0.0000}° {lonDir}";
+    }
+
+    private string FormatTimestamp(DateTimeOffset? ts)
+    {
+        if (ts == null)
+            return "—";
+
+        // Convert to local time (important for a Hybrid app)
+        var local = ts.Value.ToLocalTime();
+
+        return local.ToString("dd MMM, yyyy - HH:mm:ss");
+    }
+
+}

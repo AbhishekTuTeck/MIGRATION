@@ -15,7 +15,7 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Migration
 build_property.RootNamespace = Migration
-build_property.ProjectDir = C:\Sourcetree\MIGRATION\gitMigration\
+build_property.ProjectDir = C:\Users\AmitabhDas\Documents\Project\NSSO\MigrationSurvey\MigrationSurvey\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true
@@ -29,12 +29,12 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Sourcetree\MIGRATION\gitMigration
+build_property.MSBuildProjectDirectory = C:\Users\AmitabhDas\Documents\Project\NSSO\MigrationSurvey\MigrationSurvey
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Sourcetree/MIGRATION/gitMigration/App.xaml]
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Migration.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
@@ -45,7 +45,7 @@ build_metadata.AdditionalFiles.EnableDiagnostics =
 build_metadata.AdditionalFiles.LineInfo = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Sourcetree/MIGRATION/gitMigration/MainPage.xaml]
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Migration.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
@@ -56,7 +56,7 @@ build_metadata.AdditionalFiles.EnableDiagnostics =
 build_metadata.AdditionalFiles.LineInfo = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Sourcetree/MIGRATION/gitMigration/Components/Pages/FsuList.razor]
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Pages/FsuList.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGc3VMaXN0LnJhem9y
@@ -67,7 +67,7 @@ build_metadata.AdditionalFiles.EnableDiagnostics =
 build_metadata.AdditionalFiles.LineInfo = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Sourcetree/MIGRATION/gitMigration/Components/Pages/Index.razor]
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Pages/Index.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbmRleC5yYXpvcg==
@@ -78,7 +78,7 @@ build_metadata.AdditionalFiles.EnableDiagnostics =
 build_metadata.AdditionalFiles.LineInfo = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Sourcetree/MIGRATION/gitMigration/Components/Pages/Login.razor]
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Pages/Login.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
@@ -89,7 +89,73 @@ build_metadata.AdditionalFiles.EnableDiagnostics =
 build_metadata.AdditionalFiles.LineInfo = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Sourcetree/MIGRATION/gitMigration/Components/Routes.razor]
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Pages/SCH10.3/Sch_10.3_Block_1.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTQ0gxMC4zXFNjaF8xMC4zX0Jsb2NrXzEucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.Inflator = 
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Pages/SCH10.3/Sch_10.3_Block_3.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTQ0gxMC4zXFNjaF8xMC4zX0Jsb2NrXzMucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.Inflator = 
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Pages/SCH10.3/Sch_10.3_Block_4.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTQ0gxMC4zXFNjaF8xMC4zX0Jsb2NrXzQucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.Inflator = 
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Pages/SCH10.3/Sch_10.3_Block_5.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTQ0gxMC4zXFNjaF8xMC4zX0Jsb2NrXzUucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.Inflator = 
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Pages/SCH10.3/SurveryTopHeader.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTQ0gxMC4zXFN1cnZlcnlUb3BIZWFkZXIucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.Inflator = 
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Pages/SsuList.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTc3VMaXN0LnJhem9y
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.Inflator = 
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Routes.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
@@ -100,7 +166,7 @@ build_metadata.AdditionalFiles.EnableDiagnostics =
 build_metadata.AdditionalFiles.LineInfo = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Sourcetree/MIGRATION/gitMigration/Components/_Imports.razor]
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/_Imports.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
@@ -111,7 +177,7 @@ build_metadata.AdditionalFiles.EnableDiagnostics =
 build_metadata.AdditionalFiles.LineInfo = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Sourcetree/MIGRATION/gitMigration/Components/Layout/AuthenticatedLayout.razor]
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Layout/AuthenticatedLayout.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQXV0aGVudGljYXRlZExheW91dC5yYXpvcg==
@@ -122,7 +188,7 @@ build_metadata.AdditionalFiles.EnableDiagnostics =
 build_metadata.AdditionalFiles.LineInfo = 
 build_metadata.AdditionalFiles.CssScope = b-8gqsx0id8b
 
-[C:/Sourcetree/MIGRATION/gitMigration/Components/Layout/MainLayout.razor]
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
@@ -133,7 +199,7 @@ build_metadata.AdditionalFiles.EnableDiagnostics =
 build_metadata.AdditionalFiles.LineInfo = 
 build_metadata.AdditionalFiles.CssScope = b-l0i9pio9nv
 
-[C:/Sourcetree/MIGRATION/gitMigration/Components/Layout/NavMenu.razor]
+[C:/Users/AmitabhDas/Documents/Project/NSSO/MigrationSurvey/MigrationSurvey/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==

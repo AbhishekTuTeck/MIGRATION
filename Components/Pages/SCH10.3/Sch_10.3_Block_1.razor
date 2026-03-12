@@ -1,0 +1,538 @@
+﻿@page "/sch10.3-block-1"
+@layout Migration.Components.Layout.AuthenticatedLayout
+
+@using BootstrapBlazor.Components
+@using Migration.Models
+@* @using Migration.DTOs *@
+
+@* @inject ISchedule10_3Service ScheduleService *@
+@inject NavigationManager navigationManager
+
+<div class="main-content">
+    <SurveryTopHeader />
+
+    <EditForm Model="Model" OnValidSubmit="SaveAsync">
+        <DataAnnotationsValidator />
+
+        <div class="card custom-card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <span class="text-primary fw-bolder me-2">[Block 1]</span>
+                    Identification of sample household
+                </h3>
+            </div>
+
+            <div class="card-body">
+                <div class="row">
+
+                    <!-- 1 Sector (Rural-1, Urban -2) -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <span class="form-badge">1</span> Sector (Rural-1, Urban -2)
+                            </label>
+                            <InputText class="form-control form-control-sm" @bind-Value="Model.Item1" @onchange="Block1_Item1_Sector_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 2 Type of Sample -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">2</span> Type of Sample</label>
+                            <InputText class="form-control form-control-sm" @bind-Value="Model.Item2" @onchange="Block1_Item2_TypeOfSample_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 3 State/U.T. Name -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">3</span> State/U.T. Name</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item3" @onchange="Block1_Item3_StateName_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 4 District Name -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">4</span> District Name</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item4" @onchange="Block1_Item4_DistrictName_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 5 Sub-District/Tehsil/Town -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">5</span> Name of Sub-District/Tehsil/Town</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item5" @onchange="Block1_Item5_SubDistrict_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 6 Village Name -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">6</span> Village Name</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item6" @onchange="Block1_Item6_Village_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 7 Investigator Unit Number/Block Number -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">7</span> Investigator Unit Number/Block Number:</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item7" @onchange="Block1_Item7_InvestigatorUnitNo_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 8 Sample Sub-Unit (SU) Number -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">8</span> Sample Sub-Unit (SU) Number</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item8" @onchange="Block1_Item8_SUNumber_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 9 Round Number -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">9</span> Round Number</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item9" @onchange="Block1_Item9_RoundNumber_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 10 Schedule name/Module -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">10</span> Schedule name/Module</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item10" @onchange="Block1_Item10_ScheduleName_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 11 Serial Number of Sample FSU -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">11</span> Serial Number of Sample FSU</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item11" @onchange="Block1_Item11_FSU_SerialNo_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 12 Sample Sub-Division Number -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">12</span> Sample Sub-Division Number</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item12" @onchange="Block1_Item12_SubDivisionNo_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 13 Second Stage Stratum Number -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">13</span> Second Stage Stratum Number</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item13" />
+                        </div>
+                    </div>
+
+                    <!-- 14 Household No -->
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">14</span> Sample Household Number</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item14" />
+                        </div>
+                    </div>
+
+                    <!-- 15 Survey Code -->
+                    <div class="col-sm-6">
+                        <label class="form-label">
+                            <span class="form-badge">15</span>
+                            Survey Code
+                        </label>
+                        <InputSelect class="form-select form-select-sm" @bind-Value="Model.Item15" @onchange="Block1_Item15_SurveyCode_Changed">
+                            <option value="">-- Select --</option>
+                            <option value="1">1 - Original</option>
+                            <option value="2">2 - Substitute</option>
+                            <option value="3">3 - Casualty</option>
+                        </InputSelect>
+                    </div>
+
+                    @if ((Model.Item15 ?? "").Equals("2") || (Model.Item15 ?? "").Equals("3"))
+                    {
+                        <!-- 16 -->
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    <span class="form-badge">16</span>
+                                    Reason
+                                </label>
+                                <InputSelect class="form-select form-select-sm" @bind-Value="Model.Item16" @onchange="Block1_Item16_ReasonCode_Changed">
+                                    <option value="">-- Select --</option>
+                                    <option value="1">1 - Informant busy</option>
+                                    <option value="2">2 - Members away</option>
+                                    <option value="3">3 - Non-cooperative</option>
+                                    <option value="9">9 - Others</option>
+                                </InputSelect>
+                            </div>
+                        </div>
+
+                        @if ((Model.Item16 ?? "").Equals("9"))
+                        {
+                            <div class="col-sm-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Others</label>
+                                    <InputText class="form-control form-control-sm" placeholder="Enter Other Reason" @bind-Value="Model.Item17" @onchange="Block1_Item16_Others_Changed" />
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Vertical Form -->
+        <div class="card custom-card">
+            <div class="card-body">
+                <div class="row">
+
+                    <!-- 1 Sector (Rural-1, Urban -2) -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <span class="form-badge">1</span>
+                                Sector (Rural-1, Urban -2)
+                            </label>
+                            <InputText class="form-control form-control-sm"
+                                       @bind-Value="Model.Item1"
+                                       @onchange="Block1_Item1_Sector_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 2 Type of Sample -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">2</span>Type of Sample</label>
+                            <InputText class="form-control form-control-sm"
+                                       @bind-Value="Model.Item2"
+                                       @onchange="Block1_Item2_TypeOfSample_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 3 State/U.T. Name -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">3</span>State/U.T. Name</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item3" @onchange="Block1_Item3_StateName_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 4 District Name -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">4</span>District Name</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item4" @onchange="Block1_Item4_DistrictName_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 5 Sub-District/Tehsil/Town -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">5</span>Name of Sub-District/Tehsil/Town</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item5" @onchange="Block1_Item5_SubDistrict_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 6 Village Name -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">6</span>Village Name</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item6" @onchange="Block1_Item6_Village_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 7 Investigator Unit Number/Block Number -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">7</span>Investigator Unit Number/Block Number:</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item7" @onchange="Block1_Item7_InvestigatorUnitNo_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 8 Sample Sub-Unit (SU) Number -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">8</span>Sample Sub-Unit (SU) Number</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item8" @onchange="Block1_Item8_SUNumber_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 9 Round Number -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">9</span>Round Number</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item9" @onchange="Block1_Item9_RoundNumber_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 10 Schedule name/Module -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">10</span>Schedule name/Module</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item10" @onchange="Block1_Item10_ScheduleName_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 11 Serial Number of Sample FSU -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">11</span>Serial Number of Sample FSU</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item11" @onchange="Block1_Item11_FSU_SerialNo_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 12 Sample Sub-Division Number -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">12</span>Sample Sub-Division Number</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item12" @onchange="Block1_Item12_SubDivisionNo_Changed" />
+                        </div>
+                    </div>
+
+                    <!-- 13 Second Stage Stratum Number -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">13</span>Second Stage Stratum Number</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item13" />
+                        </div>
+                    </div>
+
+                    <!-- 14 Household No -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">14</span>Sample Household Number</label>
+                            <InputText class="form-control form-control-sm" disabled @bind-Value="Model.Item14" />
+                        </div>
+                    </div>
+
+                    <!-- 15 Survey Code -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">15</span> Survey Code</label>
+                            <InputSelect class="form-select form-select-sm" @bind-Value="Model.Item15" @onchange="Block1_Item15_SurveyCode_Changed">
+                                <option value="">-- Select --</option>
+                                <option value="1">1 - Original</option>
+                                <option value="2">2 - Substitute</option>
+                                <option value="3">3 - Casualty</option>
+                            </InputSelect>
+                        </div>
+                    </div>
+
+                    @if ((Model.Item15 ?? "").Equals("2") || (Model.Item15 ?? "").Equals("3"))
+                    {
+                        <!-- 16 -->
+                        <div class="col-sm-12">
+                            <div class="mb-3">
+                                <label class="form-label"><span class="form-badge">16</span> Reason</label>
+                                <InputSelect class="form-select form-select-sm" @bind-Value="Model.Item16" @onchange="Block1_Item16_ReasonCode_Changed">
+                                    <option value="">-- Select --</option>
+                                    <option value="1">1 - Informant busy</option>
+                                    <option value="2">2 - Members away</option>
+                                    <option value="3">3 - Non-cooperative</option>
+                                    <option value="9">9 - Others</option>
+                                </InputSelect>
+                            </div>
+                        </div>
+
+                        @if ((Model.Item16 ?? "").Equals("9"))
+                        {
+                            <div class="col-sm-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Others</label>
+                                    <InputText class="form-control form-control-sm"
+                                               placeholder="Enter Other Reason"
+                                               @bind-Value="Model.Item17"
+                                               @onchange="Block1_Item16_Others_Changed" />
+                                </div>
+                            </div>
+                        }
+                    }
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer pb-5">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="d-flex">
+                        <button class="btn btn-outline-secondary" @onclick="@(() => navigationManager.NavigateTo("/ssulist"))"><i class="fi fi-rr-angle-left me-1"></i>Back</button>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <NavLink class="btn btn-primary  me-2 is_sso action"><i class="fi fi-rr-disk me-1"></i>Save</NavLink>
+                        <NavLink class="btn btn-outline-secondary" @onclick="@(() => navigationManager.NavigateTo("/sch10.3-block-3"))">Next<i class="fi fi-rr-angle-right ms-1"></i></NavLink>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </EditForm>
+</div>
+
+
+@code {
+
+    private Schedule10_3_Block1_Model Model = new();
+
+    private readonly string CURRENT_SURVEY_ID = "10.3";
+    /* =========================
+    CHANGE HANDLERS
+    ==========================*/
+
+    private void Block1_Item1_Sector_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+
+    private void Block1_Item2_TypeOfSample_Changed(ChangeEventArgs e)
+    {
+    }
+
+    private void Block1_Item3_StateName_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+    private void Block1_Item4_DistrictName_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+
+
+    private void Block1_Item5_SubDistrict_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+
+    private void Block1_Item6_Village_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+
+    private void Block1_Item7_InvestigatorUnitNo_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+
+    private void Block1_Item8_SUNumber_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+
+    private void Block1_Item9_RoundNumber_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+
+    private void Block1_Item10_ScheduleName_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+
+    private void Block1_Item11_FSU_SerialNo_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+
+    private void Block1_Item12_SubDivisionNo_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+
+    private void Block1_Item13_StratumNo_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+
+    private void Block1_Item14_HouseholdNo_Changed(ChangeEventArgs e)
+    {
+        // TODO: validation / ticketing / API trigger
+    }
+
+    private void Block1_Item15_SurveyCode_Changed(ChangeEventArgs e)
+    {
+        if (!(Model.Item15 ?? "").Equals("2") && !(Model.Item15 ?? "").Equals("3"))
+        {
+            Model.Item16 = null;
+            Model.Item17 = null;
+        }
+    }
+
+    private void Block1_Item16_ReasonCode_Changed(ChangeEventArgs e)
+    {
+        if (!(Model.Item16 ?? "").Equals("9"))
+        {
+            Model.Item17 = null;
+        }
+    }
+
+    private void Block1_Item16_Others_Changed(ChangeEventArgs e)
+    {
+    }
+
+    /* =========================
+       SAVE PIPELINE
+    ==========================*/
+
+    private async Task SaveAsync()
+    {
+        /* TODO : Implement Save Logic
+        // Branch cleanup
+        if (Model.Item15_SurveyCode != 2 && Model.Item15_SurveyCode != 3)
+        {
+            Model.Item16_ReasonCode = null;
+            Model.Item16_OthersReason = null;
+        }
+
+        if (Model.Item16_ReasonCode != 9)
+        {
+            Model.Item16_OthersReason = null;
+        }
+
+        var dto = MapToDto(Model);
+
+        await ScheduleService.SaveBlock1Async(dto);
+        */
+        navigationManager.NavigateTo("/sch10.3-block-3");
+    }
+
+
+    private Schedule10_3_Block1_SaveDTO MapToDto(Schedule10_3_Block1_Model model)
+    {
+
+        return new Schedule10_3_Block1_SaveDTO
+        {
+            S10_3_B1_Item1 = model.Item1,
+            S10_3_B1_Item2 = model.Item2,
+            S10_3_B1_Item3 = model.Item3,
+            S10_3_B1_Item4 = model.Item4,
+            S10_3_B1_Item5 = model.Item5,
+            S10_3_B1_Item6 = model.Item6,
+            S10_3_B1_Item7 = model.Item7,
+            S10_3_B1_Item8 = model.Item8,
+            S10_3_B1_Item9 = model.Item9,
+            S10_3_B1_Item10 = model.Item10,
+            S10_3_B1_Item11 = model.Item11,
+            S10_3_B1_Item12 = model.Item12,
+            S10_3_B1_Item13 = model.Item13,
+            S10_3_B1_Item14 = model.Item14,
+            S10_3_B1_Item15 = model.Item15,
+            S10_3_B1_Item16 = model.Item16,
+            S10_3_B1_Item16_Others = model.Item17,
+            S10_3_B1_Item17_Remarks = model.Item18,
+            SurveyId = CURRENT_SURVEY_ID,
+            SavedOn = DateTime.UtcNow,
+            SavedBy = "CURRENT_USER"
+        };
+    }
+}

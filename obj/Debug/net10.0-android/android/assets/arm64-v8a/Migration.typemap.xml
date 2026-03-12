@@ -1,4 +1,4 @@
-<api type="debug" assembly-name="Migration" mvid="7d2d721a521545a883c1636565b18ddf">
+<api type="debug" assembly-name="Migration" mvid="36447fc7df2f4c198f2c7896410f792d">
   <java-to-managed>
     <entry java-name="crc64dfea370aa1da2969/MainActivity" managed-name="Migration.MainActivity, Migration" managed-type-token-id="33554441" />
     <entry java-name="crc64dfea370aa1da2969/MainApplication" managed-name="Migration.MainApplication, Migration" managed-type-token-id="33554442" />

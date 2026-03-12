@@ -1,5 +1,6 @@
 ﻿using Blazored.Toast;
 using Microsoft.Extensions.Logging;
+using Migration.Services;
 
 namespace Migration
 {
@@ -24,6 +25,11 @@ namespace Migration
     		builder.Logging.AddDebug();
 
 #endif
+
+            // Location Services 
+
+            builder.Services.AddSingleton<ILocationService, LocationService>();
+
 
             return builder.Build();
         }

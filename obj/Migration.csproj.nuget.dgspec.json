@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Sourcetree\\MIGRATION\\gitMigration\\Migration.csproj": {}
+    "C:\\Users\\AmitabhDas\\Documents\\Project\\NSSO\\MigrationSurvey\\MigrationSurvey\\Migration.csproj": {}
   },
   "projects": {
-    "C:\\Sourcetree\\MIGRATION\\gitMigration\\Migration.csproj": {
+    "C:\\Users\\AmitabhDas\\Documents\\Project\\NSSO\\MigrationSurvey\\MigrationSurvey\\Migration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sourcetree\\MIGRATION\\gitMigration\\Migration.csproj",
+        "projectUniqueName": "C:\\Users\\AmitabhDas\\Documents\\Project\\NSSO\\MigrationSurvey\\MigrationSurvey\\Migration.csproj",
         "projectName": "Migration",
-        "projectPath": "C:\\Sourcetree\\MIGRATION\\gitMigration\\Migration.csproj",
-        "packagesPath": "C:\\Users\\abhishek.ghosh\\.nuget\\packages\\",
-        "outputPath": "C:\\Sourcetree\\MIGRATION\\gitMigration\\obj\\",
+        "projectPath": "C:\\Users\\AmitabhDas\\Documents\\Project\\NSSO\\MigrationSurvey\\MigrationSurvey\\Migration.csproj",
+        "packagesPath": "C:\\Users\\AmitabhDas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AmitabhDas\\Documents\\Project\\NSSO\\MigrationSurvey\\MigrationSurvey\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\abhishek.ghosh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AmitabhDas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -67,9 +67,21 @@
         "net10.0-android36.0": {
           "targetAlias": "net10.0-android",
           "dependencies": {
+            "Blazor.Bootstrap": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "Blazored.Toast": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "BootstrapBlazor": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.20, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -77,12 +89,12 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.20, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.2, )",
+              "version": "[10.0.3, )",
               "autoReferenced": true
             }
           },
@@ -108,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -387,9 +399,21 @@
         "net10.0-ios26.2": {
           "targetAlias": "net10.0-ios",
           "dependencies": {
+            "Blazor.Bootstrap": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "Blazored.Toast": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "BootstrapBlazor": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.20, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -397,12 +421,12 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.20, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.2, )",
+              "version": "[10.0.3, )",
               "autoReferenced": true
             }
           },
@@ -428,7 +452,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -707,9 +731,21 @@
         "net10.0-maccatalyst26.2": {
           "targetAlias": "net10.0-maccatalyst",
           "dependencies": {
+            "Blazor.Bootstrap": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "Blazored.Toast": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "BootstrapBlazor": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.20, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -717,12 +753,12 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.20, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.2, )",
+              "version": "[10.0.3, )",
               "autoReferenced": true
             }
           },
@@ -749,7 +785,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1028,9 +1064,21 @@
         "net10.0-windows10.0.19041": {
           "targetAlias": "net10.0-windows10.0.19041.0",
           "dependencies": {
+            "Blazor.Bootstrap": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "Blazored.Toast": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "BootstrapBlazor": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.20, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -1038,7 +1086,7 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.20, )"
             }
           },
           "imports": [
@@ -1066,7 +1114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
