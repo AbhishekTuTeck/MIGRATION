@@ -1,4 +1,5 @@
 ﻿@page "/sch10.3-block-4"
+@using Migration.Models
 @layout Migration.Components.Layout.AuthenticatedLayout
 
 
@@ -20,14 +21,14 @@
                             <td>1</td>
                             <td colspan="2">Household Size</td>
                             <td>
-                                <input class="form-control form-control-sm" />
+                                <InputNumber class="form-control form-control-sm" @bind-Value="Model.Item1" @onchange="Block4_Item1_Changed"/>
                             </td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td colspan="2">Household Religion</td>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-Value="Model.Item2" @onchange="Block4_Item2_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Hinduism</option>
                                     <option value="2">2 - Islam</option>
@@ -37,20 +38,20 @@
                                     <option value="6">6 - Buddhism</option>
                                     <option value="7">7 - Zoroastrianism</option>
                                     <option value="9">9 - Others</option>
-                                </select>
+                                </InputSelect>
                             </td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td colspan="2">Household Social Group</td>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-Value="Model.Item3" @onchange="Block4_Item3_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Scheduled Tribe (ST)</option>
                                     <option value="2">2 - Scheduled Caste (SC)</option>
                                     <option value="3">3 - Other Backward Class (OBC)</option>
                                     <option value="9">9 - Others</option>
-                                </select>
+                                </InputSelect>
                             </td>
                         </tr>
                         <tr>
@@ -59,24 +60,24 @@
                                 <p class="mb-0 fw-bold">Area type in which the dwelling unit is located (code)</p>
                             </td>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-Value="Model.Item4">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Notified slum</option>
                                     <option value="2">2 - Non-notified slum</option>
                                     <option value="3">3 - Squatter settlement</option>
                                     <option value="9">9 - Other areas</option>
-                                </select>
+                                </InputSelect>
                             </td>
                         </tr>
                         <tr>
                             <td>5</td>
                             <td colspan="2">Whether the household migrated to the village/town of enumeration during the last 365 days. (yes- 1, no- 2)</td>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-Value="Model.Item5" @onchange="Block4_Item5_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Yes</option>
                                     <option value="2">2 - No</option>
-                                </select>
+                                </InputSelect>
                             </td>
                         </tr>
                         <tr>
@@ -86,7 +87,7 @@
                             </td>
                             <td>Location of last usual place of residence (code)</td>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-Value="Model.Item6" @onchange="Block4_Item6_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Same district (rural)</option>
                                     <option value="2">2 - Same district (urban)</option>
@@ -95,25 +96,25 @@
                                     <option value="5">5 - Another state (rural)</option>
                                     <option value="6">6 - Another state (urban)</option>
                                     <option value="7">7 - Another country</option>
-                                </select>
+                                </InputSelect>
                             </td>
                         </tr>
                         <tr>
                             <td>7</td>
                             <td>Pattern of migration (code)</td>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-value="Model.Item7" @onchange="Block4_Item7_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Temporary</option>
                                     <option value="2">2 - Permanent</option>
-                                </select>
+                                </InputSelect>
                             </td>
                         </tr>
                         <tr>
                             <td>8</td>
                             <td>Reason for migration (code)</td>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-value="Model.Item8" @onchange="Block4_Item8_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="01">01 - Search of employment</option>
                                     <option value="02">02 - Search of better employment</option>
@@ -133,53 +134,53 @@
                                     <option value="17">17 - Marriage</option>
                                     <option value="18">18 - Migration of parent/earning member</option>
                                     <option value="19">19 - Others</option>
-                                </select>
+                                </InputSelect>
                             </td>
                         </tr>
                         <tr>
                             <td>9</td>
                             <td colspan="2">Whether any former member of the household migrated out any time in the past (yes - 1, no – 2)</td>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm"  @bind-value="Model.Item9" @onchange="Block4_Item9_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Yes</option>
                                     <option value="2">2 - No</option>
-                                </select>
+                                </InputSelect>
                             </td>
                         </tr>
                         <tr>
-                            <td>10</td>
+                            <td>10</td>W
                             <td rowspan="4">
                                 <p class="mb-0 fw-bold">If code 1 in item 9</p>
                             </td>
                             <td>Number of male members who migrated out </td>
                             <td>
-                                <input type="number" class="form-control form-control-sm" />
+                                <InputNumber class="form-control form-control-sm" @bind-value="Model.Item10" @onchange="Block4_Item10_Changed"/>
                             </td>
                         </tr>
                         <tr>
                             <td>11</td>
                             <td>Number of female members who migrated out</td>
                             <td>
-                                <input type="number" class="form-control form-control-sm" />
+                                <InputNumber type="number" class="form-control form-control-sm"  @bind-value="Model.Item11" @onchange="Block4_Item11_Changed"/>
                             </td>
                         </tr>
                         <tr>
                             <td>12</td>
                             <td>Number of transgender members who migrated out </td>
                             <td>
-                                <input type="number" class="form-control form-control-sm" />
+                                <InputNumber  class="form-control form-control-sm"  @bind-value="Model.Item12" @onchange="Block4_Item12_Changed"/>
                             </td>
                         </tr>
                         <tr>
                             <td>13</td>
                             <td>Whether received remittances at least once during the last 365 days from the members who migrated out (yes - 1, no - 2)</td>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm"  @bind-value="Model.Item13" @onchange="Block4_Item13_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Yes</option>
                                     <option value="2">2 - No</option>
-                                </select>
+                                </InputSelect>
                             </td>
                         </tr>
                         <tr>
@@ -190,7 +191,7 @@
                                 </p>
                             </td>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm"  @bind-value="Model.Item14A" @onchange="Block4_Item14_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="01">01 - Food items</option>
                                     <option value="02">02 - Education</option>
@@ -205,12 +206,32 @@
                                     <option value="12">12 - Saving/investment</option>
                                     <option value="19">19 - Others</option>
                                     <option value="99">99 - No second/third/fourth/fifth use</option>
-                                </select>
+                                </InputSelect>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>
+                                <InputSelect class="form-select form-select-sm"  @bind-value="Model.Item14B" @onchange="Block4_Item14_Changed">
+                                    <option value="">-- Select --</option>
+                                    <option value="01">01 - Food items</option>
+                                    <option value="02">02 - Education</option>
+                                    <option value="03">03 - Household durable</option>
+                                    <option value="04">04 - Marriage/ceremonies</option>
+                                    <option value="05">05 - Health care</option>
+                                    <option value="06">06 - Other consumer expenditure</option>
+                                    <option value="07">07 - Improving housing condition</option>
+                                    <option value="08">08 - Debt repayment</option>
+                                    <option value="10">10 - Financing working capital</option>
+                                    <option value="11">11 - New entrepreneurial activity</option>
+                                    <option value="12">12 - Saving/investment</option>
+                                    <option value="19">19 - Others</option>
+                                    <option value="99">99 - No second/third/fourth/fifth use</option>
+                                </InputSelect>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm"   @bind-value="Model.Item14C" @onchange="Block4_Item14_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="01">01 - Food items</option>
                                     <option value="02">02 - Education</option>
@@ -225,12 +246,12 @@
                                     <option value="12">12 - Saving/investment</option>
                                     <option value="19">19 - Others</option>
                                     <option value="99">99 - No second/third/fourth/fifth use</option>
-                                </select>
+                                </InputSelect>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm"  @bind-value="Model.Item14D" @onchange="Block4_Item14_Changed">>
                                     <option value="">-- Select --</option>
                                     <option value="01">01 - Food items</option>
                                     <option value="02">02 - Education</option>
@@ -245,12 +266,12 @@
                                     <option value="12">12 - Saving/investment</option>
                                     <option value="19">19 - Others</option>
                                     <option value="99">99 - No second/third/fourth/fifth use</option>
-                                </select>
+                                </InputSelect>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm"  @bind-value="Model.Item14E" @onchange="Block4_Item14_Changed">>
                                     <option value="">-- Select --</option>
                                     <option value="01">01 - Food items</option>
                                     <option value="02">02 - Education</option>
@@ -265,27 +286,7 @@
                                     <option value="12">12 - Saving/investment</option>
                                     <option value="19">19 - Others</option>
                                     <option value="99">99 - No second/third/fourth/fifth use</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <select class="form-select form-select-sm">
-                                    <option value="">-- Select --</option>
-                                    <option value="01">01 - Food items</option>
-                                    <option value="02">02 - Education</option>
-                                    <option value="03">03 - Household durable</option>
-                                    <option value="04">04 - Marriage/ceremonies</option>
-                                    <option value="05">05 - Health care</option>
-                                    <option value="06">06 - Other consumer expenditure</option>
-                                    <option value="07">07 - Improving housing condition</option>
-                                    <option value="08">08 - Debt repayment</option>
-                                    <option value="10">10 - Financing working capital</option>
-                                    <option value="11">11 - New entrepreneurial activity</option>
-                                    <option value="12">12 - Saving/investment</option>
-                                    <option value="19">19 - Others</option>
-                                    <option value="99">99 - No second/third/fourth/fifth use</option>
-                                </select>
+                                </InputSelect>
                             </td>
                         </tr>
                     </tbody>
@@ -348,6 +349,68 @@
     </div>
 </div>
 @code {
+    private Schedule10_3_Block4_Model Model = new();
+
+    #region Change Events
+
+    private void Block4_Item1_Changed(ChangeEventArgs e)
+    {
+        // TODO - Household size 
+    }
+    private void Block4_Item2_Changed(ChangeEventArgs e)
+    {
+        // TODO - Household Religion 
+    }
+    private void Block4_Item3_Changed(ChangeEventArgs e)
+    {
+        // TODO - Household Social group 
+    }
+    private void Block4_Item4_Changed(ChangeEventArgs e)
+    {
+        // TODO - Area type in which the dwelling unit is located (code) 
+    }
+    private void Block4_Item5_Changed(ChangeEventArgs e)
+    {
+        // TODO - whether the household migrated to the village/town of enumeration during the last 365 days.
+    }
+    private void Block4_Item6_Changed(ChangeEventArgs e)
+    {
+        // TODO - location of last usual place of residence (code) 
+    }
+    private void Block4_Item7_Changed(ChangeEventArgs e)
+    {
+        // TODO - pattern of migration (code) 
+    }
+    private void Block4_Item8_Changed(ChangeEventArgs e)
+    {
+        // TODO - reason for migration (code) 
+    }
+    private void Block4_Item9_Changed(ChangeEventArgs e)
+    {
+        // TODO - whether any former member of the household migrated out any time in the past  
+    }
+    private void Block4_Item10_Changed(ChangeEventArgs e)
+    {
+        // TODO - number of male members who migrated out  
+    }
+    private void Block4_Item11_Changed(ChangeEventArgs e)
+    {
+        // TODO - number of female members who migrated out  
+    }
+    private void Block4_Item12_Changed(ChangeEventArgs e)
+    {
+        // TODO - number of transgender members who migrated out  
+    }
+    private void Block4_Item13_Changed(ChangeEventArgs e)
+    {
+        // TODO - whether received remittances at least once during the last 365 days from the members who migrated out (yes - 1, no - 2) 
+    }
+    private void Block4_Item14_Changed(ChangeEventArgs e)
+    {
+        // TODO - If 1 in item 13, use of remittances (maximum five codes in descending order of amount used)
+    }
+
+
+    #endregion Change Events
 
 }
-

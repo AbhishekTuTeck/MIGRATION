@@ -123,14 +123,14 @@
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">1</span>Serial Number</label>
-                                <input type="number" class="form-control form-control-sm" disabled />
+                                <InputNumber class="form-control form-control-sm" disabled @bind-Value="newItem.Item1" />
                             </div>
                         </div>
                         <!--Name -->
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">2</span>Name of the household member</label>
-                                <input type="text" class="form-control form-control-sm" />
+                                <InputText type="text" class="form-control form-control-sm" @bind-Value="newItem.Item2" />
                             </div>
                         </div>
 
@@ -138,7 +138,7 @@
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">3</span>Relation to head (code)</label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-Value="newItem.Item3">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Self</option>
                                     <option value="2">2 - Spouse of head</option>
@@ -149,26 +149,26 @@
                                     <option value="7">7 - Father / Mother / Father-in-law / Mother-in-law</option>
                                     <option value="8">8 - Brother / Sister / Brother-in-law / Sister-in-law / Other relatives</option>
                                     <option value="9">9 - Servant / Employees / Other non-relatives</option>
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
                         <!-- Gender -->
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">4</span>Gender (code)</label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-Value="newItem.Item4">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Male</option>
                                     <option value="2">2 - Female</option>
                                     <option value="3">3 - Transgender</option>
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
                         <!-- Age -->
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">5</span>Age(years)</label>
-                                <input class="form-control form-control-sm" type="number" />
+                                <InputNumber class="form-control form-control-sm" @bind-Value="newItem.Item5" />
                             </div>
                         </div>
                         <!-- 6 -->
@@ -177,20 +177,20 @@
                                 <label class="form-label">
                                     <span class="form-badge">6</span>Marital status(code)
                                 </label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-Value="newItem.Item6">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Never married</option>
                                     <option value="2">2 - Currently married</option>
                                     <option value="3">3 - Widowed</option>
                                     <option value="4">4 - Divorced / Separated</option>
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
                         <!-- 7 -->
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">7</span>Highest level of education Completed successfully(code)</label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-Value="newItem.Item7">
                                     <option value="">-- Select --</option>
                                     <option value="01">01 - Not literate</option>
                                     <option value="02">02 - Literate without formal schooling: EGS / NFEC / AEC</option>
@@ -204,7 +204,7 @@
                                     <option value="11">11 - Diploma / Certificate course</option>
                                     <option value="12">12 - Graduate</option>
                                     <option value="13">13 - Postgraduate and above</option>
-                                </select>
+                                </InputSelect>
 
                             </div>
                         </div>
@@ -212,7 +212,7 @@
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">8</span>Number of years in formal education</label>
-                                <input class="form-control form-control-sm" />
+                                <InputNumber class="form-control form-control-sm" @bind-Value="newItem.Item8" />
                             </div>
                         </div>
                         <!-- 9 -->
@@ -220,7 +220,7 @@
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">9</span>For persons age 0 to 29 years, status of current attendance(code)</label>
 
-                                <select class="form-select form-select-sm" id="educationStatus">
+                                <InputSelect class="form-select form-select-sm" @bind-Value="newItem.Item9">
                                     <option value="">-- Select --</option>
 
                                     <!-- Currently not attending -->
@@ -277,7 +277,7 @@
                                         <!-- Diploma/Certificate (post graduate and above level) -->
                                         <option value="43">43 - Diploma/Certificate (post graduate and above level)</option>
                                     </optgroup>
-                                </select>
+                                </InputSelect>
 
 
                             </div>
@@ -286,7 +286,7 @@
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">10</span>Principal Activity Status(code)</label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-Value="newItem.Item10">
                                     <option value="">-- Select --</option>
                                     <option value="11">11 - Worked in HH enterprise (self-employed): Own account worker</option>
                                     <option value="12">12 - Employer</option>
@@ -302,21 +302,21 @@
                                     <option value="95">95 - Not able to work due to disability</option>
                                     <option value="97">97 - Others (including begging, prostitution, etc.)</option>
                                     <option value="99">99 - Child less than 5 years (if code 91 not applicable)</option>
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
                         <!-- 11 -->
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">11</span>Industry division(2-digit NIC 2025)</label>
-                                <input class="form-control form-control-sm" id="IndustrialDivisionNIC" type="text" maxlength="2" />
+                                <InputText class="form-control form-control-sm" id="IndustrialDivisionNIC" type="text" maxlength="2" @bind-Value="newItem.Item11" />
                             </div>
                         </div>
                         <!-- 12 -->
                         <div class="col-sm-12">
                             <div>
                                 <label class="form-label"><span class="form-badge">12</span>Occupation(3-digit NCO-2015)</label>
-                                <input class="form-control form-control-sm" id="OccupationNCO" type="text" maxlength="3" />
+                                <InputText class="form-control form-control-sm" id="OccupationNCO" type="text" maxlength="3" @bind-Value="newItem.Item12" />
                             </div>
                         </div>
                     </div>
@@ -386,6 +386,49 @@
 
 @code {
     List<Schedule10_3_Block3_Model> Models = [];
+    Schedule10_3_Block3_Model newItem = new();
 
+    #region change events
+
+    private void Block1_Item1_Changed(ChangeEventArgs e)
+    { // TODO - srl no 
+    }
+    private void Block1_Item2_Changed(ChangeEventArgs e)
+    { // TODO - name of household member 
+    }
+    private void Block1_Item3_Changed(ChangeEventArgs e)
+    { // TODO - relation to head (code) 
+    }
+    private void Block1_Item4_Changed(ChangeEventArgs e)
+    { // TODO - gender 
+    }
+    private void Block1_Item5_Changed(ChangeEventArgs e)
+    { // TODO - age (years)  
+    }
+    private void Block1_Item6_Changed(ChangeEventArgs e)
+    { // TODO - marital status 
+    }
+    private void Block1_Item7_Changed(ChangeEventArgs e)
+    { // TODO - highest level of education completed successfully (code) 
+    }
+    private void Block1_Item8_Changed(ChangeEventArgs e)
+    { // TODO - number of years in formal education 
+    }
+    private void Block1_Item9_Changed(ChangeEventArgs e)
+    { // TODO - for persons age 0 to 29 years, status of current attendance
+    }
+    private void Block1_Item10_Changed(ChangeEventArgs e)
+    { // TODO - principal activity  
+    }
+    private void Block1_Item11_Changed(ChangeEventArgs e)
+    { // TODO - industry division  
+    }
+    private void Block1_Item12_Changed(ChangeEventArgs e)
+    { // TODO - occupation 
+    }
+
+
+
+    #endregion change events
 }
 

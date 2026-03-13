@@ -1,4 +1,5 @@
 ﻿@page "/sch10.3-block-5"
+@using Migration.Models
 @layout Migration.Components.Layout.AuthenticatedLayout
 
 
@@ -63,7 +64,7 @@
         </div>
     </div>
 
-    <!-- Block 3 ADD or edit modal Modal -->
+    <!-- Block 5 ADD or edit modal Modal -->
     <div class="modal fade" id="addMigrationBlock3Modal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -77,14 +78,14 @@
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">1</span>Serial Number</label>
-                                <input type="number" class="form-control form-control-sm" disabled />
+                                <InputNumber class="form-control form-control-sm" disabled @bind-value="newItem.Item1" @onchange="Block5_Item1_Changed"/>
                             </div>
                         </div>
                         <!--Name -->
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">2</span>Name of the household member</label>
-                                <input type="text" class="form-control form-control-sm" />
+                                <InputText type="text" class="form-control form-control-sm" @bind-value="newItem.Item2" @onchange="Block5_Item2_Changed" />
                             </div>
                         </div>
 
@@ -92,7 +93,7 @@
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">3</span>Relation to head (code)</label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-value="newItem.Item3" @onchange="Block5_Item3_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="2">2 - Spouse of head</option>
                                     <option value="3">3 - Married child</option>
@@ -102,26 +103,26 @@
                                     <option value="7">7 - Father / Mother / Father-in-law / Mother-in-law</option>
                                     <option value="8">8 - Brother / Sister / Brother-in-law / Sister-in-law / Other relatives</option>
                                     <option value="9">9 - Servant / Employees / Other non-relatives</option>
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
                         <!-- 4 - Gender -->
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">4</span> Gender (code)</label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-value="newItem.Item4" @onchange="Block5_Item4_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Male</option>
                                     <option value="2">2 - Female</option>
                                     <option value="3">3 - Transgender</option>
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
                         <!-- 5 - Age -->
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">5</span> Age(years)</label>
-                                <input class="form-control form-control-sm" type="number" />
+                                <InputNumber class="form-control form-control-sm" @bind-value="newItem.Item5" @onchange="Block5_Item5_Changed"/>
                             </div>
                         </div>
 
@@ -129,7 +130,7 @@
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">6</span> Present place of residence (code)</label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-value="newItem.Item6" @onchange="Block5_Item6_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Same state and within the same district</option>
                                     <option value="2">2 - Same state but another district</option>
@@ -137,14 +138,14 @@
                                     <option value="4">4 - Another country</option>
                                     <option value="9">9 - Not known</option>
 
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
                         <!-- 7 - State -->
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">7</span> For code 3 or 4 in Col 6, State /UT/ country of present place of residence (code)</label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-value="newItem.Item7" @onchange="Block5_Item7_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="01">01 - Search of employment</option>
                                     <option value="02">02 - Search of better employment</option>
@@ -164,7 +165,7 @@
                                     <option value="17">17 - Marriage</option>
                                     <option value="18">18 - Migration of parent/earning member</option>
                                     <option value="19">19 - Others</option>
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
 
@@ -172,11 +173,11 @@
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">8</span> Whether presently engaged in any economic activity </label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-value="newItem.Item8" @onchange="Block5_Item8_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Yes</option>
                                     <option value="2">2 - No</option>
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
 
@@ -186,7 +187,7 @@
                                 <label class="form-label">
                                     <span class="form-badge">9</span> period since leaving the household (years)
                                 </label>
-                                <input class="form-control form-control-sm" id="Item_9" type="number" maxlength="2" />
+                                <InputNumber class="form-control form-control-sm" id="Item_9" type="number" maxlength="2" @bind-value="newItem.Item9" @onchange="Block5_Item9_Changed" />
                             </div>
                         </div>
 
@@ -194,12 +195,12 @@
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">10</span> Whether presently engaged in any economic activity </label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-value="newItem.Item10" @onchange="Block5_Item10_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Yes</option>
                                     <option value="2">2 - No</option>
                                     <option value="9">9 - Not Known</option>
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
 
@@ -207,7 +208,7 @@
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label class="form-label"><span class="form-badge">9</span> For code 1 in col 10, principal activity status </label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-value="newItem.Item11" @onchange="Block5_Item11_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="11">11 - Worked in HH enterprise (self-employed): Own account worker</option>
                                     <option value="12">12 - Employer</option>
@@ -215,7 +216,7 @@
                                     <option value="31">31 - Worked as regular salaried / wage employee</option>
                                     <option value="41">41 - Worked as casual wage labour: In public works</option>
                                     <option value="51">51 - Worked as casual wage labour: In other types of work</option>
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
 
@@ -226,7 +227,7 @@
                                 <label class="form-label">
                                     <span class="form-badge">12</span> For entry in col 11, industry division (2-digit NIC 2025)
                                 </label>
-                                <input class="form-control form-control-sm" id="IndustrialDivisionNIC" type="text" maxlength="2" />
+                                <InputText class="form-control form-control-sm" id="IndustrialDivisionNIC" type="text" maxlength="2" @bind-value="newItem.Item12" @onchange="Block5_Item12_Changed" />
                             </div>
                         </div>
 
@@ -234,11 +235,11 @@
                         <div class="col-sm-12">
                             <div>
                                 <label class="form-label"><span class="form-badge">13</span> Whether sent remittances during the last 365 days </label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-value="newItem.Item13" @onchange="Block5_Item13_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Yes</option>
                                     <option value="2">2 - No</option>
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
 
@@ -247,14 +248,14 @@
                         <div class="col-sm-12">
                             <div>
                                 <label class="form-label"><span class="form-badge">14</span> Frequency of transfer of remittance  </label>
-                                <select class="form-select form-select-sm">
+                                <InputSelect class="form-select form-select-sm" @bind-value="newItem.Item14" @onchange="Block5_Item14_Changed">
                                     <option value="">-- Select --</option>
                                     <option value="1">1 - Monthly</option>
                                     <option value="2">2 - Quarterly</option>
                                     <option value="3">3 - Half-Yearly</option>
                                     <option value="4">4 - Once in a year</option>
                                     <option value="9">9 - infrequent/irregularly</option>
-                                </select>
+                                </InputSelect>
                             </div>
                         </div>
 
@@ -264,7 +265,7 @@
                                 <label class="form-label">
                                     <span class="form-badge">15</span> Amount of remittances sent during the last 365 days (Rs.)
                                 </label>
-                                <input class="form-control form-control-sm" id="Item_15" type="number" min="0.00" />
+                                <InputNumber class="form-control form-control-sm" id="Item_15" type="number" min="0.00" @bind-value="newItem.Item15" @onchange="Block5_Item15_Changed" />
                             </div>
                         </div>
                     </div>
@@ -279,3 +280,74 @@
     </div>
 
 </div>
+
+@code {
+    List<Schedule10_3_Block5_Model> models = [];
+    Schedule10_3_Block5_Model newItem = new();
+
+
+    #region change events
+
+    private void Block5_Item1_Changed(ChangeEventArgs e)
+    {
+        // TODO - srl no 
+    }
+    private void Block5_Item2_Changed(ChangeEventArgs e)
+    {
+        // TODO - name of out-migrant member 
+    }
+    private void Block5_Item3_Changed(ChangeEventArgs e)
+    {
+        // TODO - relation to head 
+    }
+    private void Block5_Item4_Changed(ChangeEventArgs e)
+    {
+        // TODO - gender 
+    }
+    private void Block5_Item5_Changed(ChangeEventArgs e)
+    {
+        // TODO - age (years) 
+    }
+    private void Block5_Item6_Changed(ChangeEventArgs e)
+    {
+        // TODO - present place of residence (code) 
+    }
+    private void Block5_Item7_Changed(ChangeEventArgs e)
+    {
+        // TODO - for code 3 or 4 in Col 6, State /UT/ country of present place of residence (code) 
+    }
+    private void Block5_Item8_Changed(ChangeEventArgs e)
+    {
+        // TODO - reason for migration (code) 
+    }
+    private void Block5_Item9_Changed(ChangeEventArgs e)
+    {
+        // TODO - period since leaving the household (years) 
+    }
+    private void Block5_Item10_Changed(ChangeEventArgs e)
+    {
+        // TODO - whether presently engaged in any economic activity 
+    }
+    private void Block5_Item11_Changed(ChangeEventArgs e)
+    {
+        // TODO - for code 1 in col 10, principal activity status 
+    }
+    private void Block5_Item12_Changed(ChangeEventArgs e)
+    {
+        // TODO - for entry in col 11, industry division  
+    }
+    private void Block5_Item13_Changed(ChangeEventArgs e)
+    {
+        // TODO - whether sent remittances during the last 365 days 
+    }
+    private void Block5_Item14_Changed(ChangeEventArgs e)
+    {
+        // TODO - frequency of transfer of remittance  
+    }
+    private void Block5_Item15_Changed(ChangeEventArgs e)
+    {
+        // TODO - amount of remittances sent during the last 365 days (Rs.) 
+    }
+
+    #endregion change events
+}
