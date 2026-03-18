@@ -1,0 +1,265 @@
+﻿@page "/sch0.0-block-0_1"
+@layout Migration.Components.Layout.AuthenticatedLayout
+
+
+<div class="main-content">
+    @* header *@
+    <div>
+        <div class="d-flex align-items-center mb-3">
+            <NavLink class="btn btn-outline-secondary btn-sm me-2" @onclick="@(() => navigationManager.NavigateTo("/fsulist"))">
+                <i class="fi fi-rr-angle-left fs-15"></i>
+            </NavLink>
+            <div class="d-flex align-items-center">
+                <h3 class="page-heading m-0 me-3">  FSUID: <strong class="me-2">#646465</strong> | SSUID: 1,2,5</h3>
+            </div>
+        </div>
+        <div class="card custom-card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-start">
+                        <div class="text-center rounded-circle border">
+                            <img src="/images/satellite.png" class="rounded-circle" width="40" alt="satellite">
+                        </div>
+                        <div class="ms-2">
+                            <small class="fs-13 mb-0">Coordinate</small>
+                            <p class="mb-0 fw-bolder">
+                                22.5744° N, 88.3629° E
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="ms-2">
+                            <small class="fs-13 mb-0">Timestamp</small>
+                            <p class="mb-0 fw-bolder">11 Nov, 2025 - 12:33:06</p>
+                        </div>
+                    </div>
+                    <div class="form-group w-25">
+                        <label class="form-label">Switch To Visited Block</label>
+                        <select class="form-select form-select-sm w-100">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* main-Content *@
+    @* Block 0 *@
+    <div class="card custom-card">
+        <div class="card-header">
+            <h3 class="card-title">
+                <span class="text-primary me-2">[0]</span>Descriptive identification of sample FSU
+            </h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">1</span> State/U.T.
+                        </label>
+                        <input type="text" class="form-control form-control-sm" value="West Bengal" disabled>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">2</span> District
+                        </label>
+                        <input type="text" class="form-control form-control-sm" value="Kolkata" disabled>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">3</span> Sub-district / Tehsil
+                        </label>
+                        <input type="text" class="form-control form-control-sm" value="kolkata" disabled>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">4</span> Village / Town
+                        </label>
+                        <input type="text" class="form-control form-control-sm" value="Kolkata" disabled>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div>
+                        <label class="form-label">
+                            <span class="form-badge">5</span> Investigator Unit
+                        </label>
+                        <input type="text" class="form-control form-control-sm" value="0101" disabled>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div>
+                        <label class="form-label">
+                            <span class="form-badge">6</span> Block
+                        </label>
+                        <input type="text" class="form-control form-control-sm" value="0.0" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Block 1 *@
+    <div class="card custom-card">
+        <div class="card-header">
+            <h3 class="card-title">
+                <span class="text-primary me-2">[1]</span>Identification of sample FSU
+            </h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">1</span>Serial number of sample FSU</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">2</span>Schedule Number</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">3</span>Sector (rural - 1, urban - 2) </label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">4</span>NSS Region</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">5</span>District Code</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">6</span>Stratum</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">7</span>Sub-stratum</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">8</span></label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">9</span>Sub-round</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">10</span>FOD sub-region</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">11</span>Frame Code</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">12</span>Population of village or number of households of UFS Block from frame</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">13</span>Approx. present population</label>
+                        <input type="text" class="form-control form-control-sm"/>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label"><span class="form-badge">14</span>Total number of SUs to be formed (D)</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="" disabled>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3" EditContext="EditContext">
+                        <label class="form-label"><span class="form-badge">15</span>Survey Code</label>
+                        <select class="form-select form-select-sm">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">16</span>
+                            Reason Code for substitution of original sample (for codes 4 - 7 in item 15)
+                        </label>
+                        <select class="form-select form-select-sm">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    @* Remark card *@
+    <div class="card custom-card">
+        <div class="card-header">
+            <h3 class="card-title"><span class="text-primary fw-bolder me-2">17</span>Remarks</h3>
+        </div>
+        <div class="card-body">
+            <textarea maxlength="500" type="text" class="form-control form-control-sm disabled w-100" placeholder="Enter your remarks here..." rows="2"></textarea>
+        </div>
+    </div>
+
+</div>
+
+@* Footer *@
+<div class="footer pb-3">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="d-flex">
+                <button class="btn btn-outline-secondary" @onclick="@(() => navigationManager.NavigateTo("/fsulist"))"><i class="fi fi-rr-angle-left me-1"></i>Back</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="d-flex align-items-center justify-content-end">
+                <NavLink class="btn btn-primary  me-2"><i class="fi fi-rr-disk me-1"></i>Save</NavLink>
+                <NavLink class="btn btn-outline-secondary" href="/sch0.0-block-3">Next<i class="fi fi-rr-angle-right ms-1"></i></NavLink>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+
+}
+
+
+

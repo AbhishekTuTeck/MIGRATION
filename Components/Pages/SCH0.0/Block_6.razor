@@ -1,0 +1,177 @@
+﻿@page "/sch0.0-block-6"
+@layout Migration.Components.Layout.AuthenticatedLayout
+
+
+<div class="main-content">
+    @* header *@
+    <div>
+        <div class="d-flex align-items-center mb-3">
+            <NavLink class="btn btn-outline-secondary btn-sm me-2" @onclick="@(() => navigationManager.NavigateTo("/fsulist"))">
+                <i class="fi fi-rr-angle-left fs-15"></i>
+            </NavLink>
+            <div class="d-flex align-items-center">
+                <h3 class="page-heading m-0 me-3">  FSUID: <strong class="me-2">#646465</strong> | SSUID: 1,2,5</h3>
+            </div>
+        </div>
+        <div class="card custom-card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-start">
+                        <div class="text-center rounded-circle border">
+                            <img src="/images/satellite.png" class="rounded-circle" width="40" alt="satellite">
+                        </div>
+                        <div class="ms-2">
+                            <small class="fs-13 mb-0">Coordinate</small>
+                            <p class="mb-0 fw-bolder">
+                                22.5744° N, 88.3629° E
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="ms-2">
+                            <small class="fs-13 mb-0">Timestamp</small>
+                            <p class="mb-0 fw-bolder">11 Nov, 2025 - 12:33:06</p>
+                        </div>
+                    </div>
+                    <div class="form-group w-25">
+                        <label class="form-label">Switch To Visited Block</label>
+                        <select class="form-select form-select-sm w-100">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* main-Content *@
+    
+    @* Block - 4.2A *@
+    <div class="card custom-card mb-3">
+        <div class="card-header">
+            <h3 class="card-title">
+                <span class="text-primary fw-bolder me-2">[6]</span>Particulars of sampling of households
+            </h3>
+        </div>
+       <div class="card-body p-0">
+           <div class="table-responsive">
+               <table class="table table-striped table-bordered mb-0 align-middle">
+                   <thead>
+                       <tr>
+                            <th rowspan="3">Schedule</th>
+                            <th rowspan="3">Population</th>
+                            <th rowspan="3">Second Stage Stratum (SSS)</th>
+                            <th rowspan="3">Number of households listed (H)</th>
+                            <th colspan="5">Number of households</th>
+                       </tr>
+                       <tr>
+                           <th rowspan="2">Selected (H)</th>
+                           <th colspan="3">Surveyed</th>
+                            <th rowspan="2">Casualty [col.5 + col.8]</th>
+                       </tr>
+                       <tr>
+                            <th>Originally selected</th>
+                            <th>Substituted</th>
+                            <th>Total [col.6 + col.8]</th>
+                       </tr>
+                       <tr>
+                            <th>(1)</th>
+                            <th>(2)</th>
+                            <th>(3)</th>
+                            <th>(4)</th>
+                            <th>(5)</th>
+                            <th>(6)</th>
+                            <th>(7)</th>
+                            <th>(8)</th>
+                            <th>(9)</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                            <td rowspan="5">Schedule: Migration Particulars</td>
+                            <td rowspan="5"></td>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                       </tr>
+                        <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>all</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                   </tbody>
+               </table>
+           </div>
+        </div>
+    </div>
+
+    @* Remark card *@
+    <div class="card custom-card">
+        <div class="card-header">
+            <h3 class="card-title">Remarks</h3>
+        </div>
+        <div class="card-body">
+            <textarea maxlength="500" type="text" class="form-control form-control-sm disabled w-100" placeholder="Enter your remarks here..." rows="2"></textarea>
+        </div>
+    </div>
+</div>
+
+@* Footer *@
+<div class="footer pb-3">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="d-flex">
+                <button class="btn btn-outline-secondary" @onclick="@(() => navigationManager.NavigateTo("/sch0.0-block-5"))"><i class="fi fi-rr-angle-left me-1"></i>Back</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="d-flex align-items-center justify-content-end">
+                <NavLink class="btn btn-primary  me-2"><i class="fi fi-rr-disk me-1"></i>Save</NavLink>
+                <NavLink class="btn btn-outline-secondary" href="/sch0.0-block-7_8">Next<i class="fi fi-rr-angle-right ms-1"></i></NavLink>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+
+}
+
+
+

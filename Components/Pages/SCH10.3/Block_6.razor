@@ -1,0 +1,354 @@
+﻿@page "/sch10.3-block-6"
+@layout Migration.Components.Layout.AuthenticatedLayout
+
+
+<div class="main-content">
+    @* header *@
+    <div>
+        <div class="d-flex align-items-center mb-3">
+            <NavLink class="btn btn-outline-secondary btn-sm me-2" @onclick="@(() => navigationManager.NavigateTo("/sch10.1-block-1"))">
+                <i class="fi fi-rr-angle-left fs-15"></i>
+            </NavLink>
+            <div class="d-flex align-items-center">
+                <h3 class="page-heading m-0 me-3">  FSUID: <strong class="me-2">#646465</strong> | SSUID: 1,2,5</h3>
+            </div>
+        </div>
+        <div class="card custom-card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-start">
+                        <div class="text-center rounded-circle border">
+                            <img src="/images/satellite.png" class="rounded-circle" width="40" alt="satellite">
+                        </div>
+                        <div class="ms-2">
+                            <small class="fs-13 mb-0">Coordinate</small>
+                            <p class="mb-0 fw-bolder">
+                                22.5744° N, 88.3629° E
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="ms-2">
+                            <small class="fs-13 mb-0">Timestamp</small>
+                            <p class="mb-0 fw-bolder">11 Nov, 2025 - 12:33:06</p>
+                        </div>
+                    </div>
+                    <div class="form-group w-25">
+                        <label class="form-label">Switch To Visited Block</label>
+                        <select class="form-select form-select-sm w-100">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* main-Content *@
+    <div class="card custom-card">
+        <div class="card-header">
+            <h3 class="card-title">
+                <span class="text-primary me-2">[Block - 6]</span>Short-Term Migration Particulars Of Household Members
+            </h3>
+            <div class="card-tools">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addBlock5Modal"><i class="fi fi-rr-plus me-1"></i>Add</button>
+            </div>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered mb-0 text-center align-middle">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Srl no (as in col. 1 of bl 3)</th>
+                            <th rowspan="2">Name of household member (as in col 2 of block 3)</th>
+                            <th rowspan="2">Age (as in col 5 of block 3)</th>
+                            <th rowspan="2">
+                                Whether stayed away from village/town for 15 days or more but less than 6 months
+                                during the last 365 days for employment or in search of employment<br>
+                                (yes-1, no-2)
+                            </th>
+                            <th colspan="7">For 1 in col 4</th>
+                            <th rowspan="2">Action</th>
+                        </tr>
+                        <tr>
+                            <th>Number of spells (of duration 15 days or more)</th>
+                            <th>Destination during longest spell (code)</th>
+                            <th>For code 5 to 7 in col 6, state /UT/ country of destination (code)</th>
+                            <th>If worked, industry of work for longest duration of work (2-digit NIC 2025)</th>
+                            <th>Occupation (3-digit NCO-2015)</th>
+                            <th>Source of information about the job/place of work? (code)</th>
+                            <th>For code 1 in col 10, nature of support provided by the contractor/agent (code)</th>
+                        </tr>
+                        <tr>
+                            <th>(1)</th>
+                            <th>(2)</th>
+                            <th>(3)</th>
+                            <th>(4)</th>
+                            <th>(5)</th>
+                            <th>(6)</th>
+                            <th>(7)</th>
+                            <th>(8)</th>
+                            <th>(9)</th>
+                            <th>(10)</th>
+                            <th>(11)</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mr. Singh</td>
+                            <td>56</td>
+                            <td>1 - Yes</td>
+                            <td>24</td>
+                            <td>1</td>
+                            <td>29</td>
+                            <td>45</td>
+                            <td>001</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-outline-primary me-2"><i class="fi fi-rr-pencil"></i></button>
+                                    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#alertModal"><i class="fi fi-rr-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mr. Singh</td>
+                            <td>56</td>
+                            <td>1 - Yes</td>
+                            <td>24</td>
+                            <td>1</td>
+                            <td>29</td>
+                            <td>45</td>
+                            <td>001</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-outline-primary me-2"><i class="fi fi-rr-pencil"></i></button>
+                                    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#alertModal"><i class="fi fi-rr-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Footer *@
+<div class="footer pb-3">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="d-flex">
+                <button class="btn btn-outline-secondary" @onclick="@(() => navigationManager.NavigateTo("/sch10.3-block-5"))"><i class="fi fi-rr-angle-left me-1"></i>Back</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="d-flex align-items-center justify-content-end">
+                <NavLink class="btn btn-primary  me-2"><i class="fi fi-rr-disk me-1"></i>Save</NavLink>
+                <NavLink class="btn btn-outline-secondary" href="/sch10.3-block-7">Next<i class="fi fi-rr-angle-right ms-1"></i></NavLink>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Block 6 ADD or edit modal Modal -->
+<div class="modal fade" id="addBlock5Modal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header py-2">
+                <h1 class="modal-title fs-5">Add Details</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Serial Number -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <span class="form-badge">1</span>Srl no (as in Col. 1 of Bl 3)
+                            </label>
+                            <input type="number" class="form-control form-control-sm" disabled />
+                        </div>
+                    </div>
+                    <!--Name -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">2</span>Name Of Household Member (As In Col 2 Of Block 3)</label>
+                            <input type="text" class="form-control form-control-sm" />
+                        </div>
+                    </div>
+
+                    <!-- Age -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <span class="form-badge">3</span>Age (as in Col 5 of Block 3)
+                            </label>
+                            <input class="form-control form-control-sm" type="number" />
+                        </div>
+                    </div>
+
+                    <!-- stayed away -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <span class="form-badge">4</span> Whether Stayed Away From Village/Town For 15 Days Or More But Less Than 6 Months
+                                During The Last 365 Days For Employment Or In Search Of Employment<br>
+                                (Yes-1, No-2)
+                            </label>
+                            <select class="form-select form-select-sm">
+                                <option value="">-- Select --</option>
+                                <option value="1">1 - Yes</option>
+                                <option value="2">2 - No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- No. of spells-->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">5</span>Number Of Spells (Of Duration 15 Days Or More)</label>
+                            <input type="text" class="form-control form-control-sm" />
+                        </div>
+                    </div>
+                    <!-- Destination during longest spell -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <span class="form-badge">6</span>Destination during longest spell
+                                (code)
+                            </label>
+                            <select class="form-select form-select-sm">
+                                <option value="">-- Select --</option>
+                                <option value="1">1 - Same district (rural)</option>
+                                <option value="2">2 - Same district (urban)</option>
+                                <option value="3">3 - Same state, another district (rural)</option>
+                                <option value="4">4 - Same state, another district (urban)</option>
+                                <option value="5">5 - Another state (rural)</option>
+                                <option value="6">6 - Another state (urban)</option>
+                                <option value="7">7 - Another country</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Stat/ut/country -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <span class="form-badge">7</span><span class="fw-bold">For code 5 to 7 in Col 6, </span> State /UT/ Country Of of destination(code)
+                            </label>
+                            <select class="form-select form-select-sm">
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- NIC 2 digit -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">8</span>If Worked, Industry Of Work For Longest Duration Of Work (2-digit NIC 2025)</label>
+                            <select class="form-select form-select-sm">
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- NIC 3 digit -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label"><span class="form-badge">9</span>Occupation (3-digit NCO-2015)</label>
+                            <select class="form-select form-select-sm">
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Source of information -->
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <span class="form-badge">10</span>Source Of Information About The Job/Place Of Work? (Code)
+                            </label>
+                            <select class="form-select form-select-sm">
+                                <option value="">-- Select --</option>
+                                <option value="1">1 - Contractor/agent/middleman</option>
+                                <option value="2">2 - Employer directly</option>
+                                <option value="3">3 - Friends/relatives</option>
+                                <option value="4">4 - Social media / online platform</option>
+                                <option value="5">5 - Government agency/facilitation centre</option>
+                                <option value="6">6 - Self-initiated (independent search)</option>
+                                <option value="9">9 - Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--  Nature of support  -->
+                    <div class="col-sm-12">
+                        <div>
+                            <label class="form-label">
+                                <span class="form-badge">11</span>For Code 1 In Col 10, Nature Of Support Provided By The Contractor/Agent (Code)
+                            </label>
+                            <select class="form-select form-select-sm">
+                                <option value="">-- Select --</option>
+                                <option value="1">1 - Arranged work only</option>
+                                <option value="2">2 - Arranged transport only</option>
+                                <option value="3">3 - Arranged accommodation only</option>
+                                <option value="4">4 - Arranged multiple aspects</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer py-2">
+                <button type="button" class="btn btn-outline-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Alert Modal -->
+<div class="modal alert-modal fade" id="alertModal" tabindex="-1"
+     data-bs-backdrop="static"
+     data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-sm ">
+        <div class="modal-content text-center p-4 rounded-4 shadow">
+
+            <!-- Icon -->
+            <div class="mb-3">
+                <div class="rounded-circle icon-container bg-danger  d-inline-flex align-items-center justify-content-center"
+                     style="width:70px;height:70px;">
+                    <i class="fi fi-rr-trash text-danger opacity-100 fs-2"></i>
+                </div>
+            </div>
+
+            <!-- Title -->
+            <h5 class="fw-bold mb-2">Are you sure?</h5>
+
+            <!-- Description -->
+            <p class="text-muted small mb-4">
+                This action cannot be undone.<br>
+                Do you really want to delete this record?
+            </p>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-center gap-2">
+                <button type="button" class="btn btn-light px-4"
+                        data-bs-dismiss="modal">
+                    Cancel
+                </button>
+                <button type="button" class="btn btn-danger px-4">
+                    Delete
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@code {
+
+}
+
+

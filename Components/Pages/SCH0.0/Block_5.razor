@@ -1,0 +1,166 @@
+﻿@page "/sch0.0-block-5"
+@layout Migration.Components.Layout.AuthenticatedLayout
+
+
+<div class="main-content">
+    @* header *@
+    <div>
+        <div class="d-flex align-items-center mb-3">
+            <NavLink class="btn btn-outline-secondary btn-sm me-2" @onclick="@(() => navigationManager.NavigateTo("/fsulist"))">
+                <i class="fi fi-rr-angle-left fs-15"></i>
+            </NavLink>
+            <div class="d-flex align-items-center">
+                <h3 class="page-heading m-0 me-3">  FSUID: <strong class="me-2">#646465</strong> | SSUID: 1,2,5</h3>
+            </div>
+        </div>
+        <div class="card custom-card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-start">
+                        <div class="text-center rounded-circle border">
+                            <img src="/images/satellite.png" class="rounded-circle" width="40" alt="satellite">
+                        </div>
+                        <div class="ms-2">
+                            <small class="fs-13 mb-0">Coordinate</small>
+                            <p class="mb-0 fw-bolder">
+                                22.5744° N, 88.3629° E
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="ms-2">
+                            <small class="fs-13 mb-0">Timestamp</small>
+                            <p class="mb-0 fw-bolder">11 Nov, 2025 - 12:33:06</p>
+                        </div>
+                    </div>
+                    <div class="form-group w-25">
+                        <label class="form-label">Switch To Visited Block</label>
+                        <select class="form-select form-select-sm w-100">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* main-Content *@
+    
+    @* Block - 5 *@
+    <div class="card custom-card mb-3">
+        <div class="card-header">
+            <h3 class="card-title">
+                <span class="text-primary fw-bolder me-2">[5]</span>List of Sub-divisions of selected SU with population equal to or more than 1500 ( 750 for special cases) and selection and identification of selected Sub-division
+            </h3>
+            <div class="card-tools">
+                <button class="btn btn-primary btn-sm"><i class="fi fi-rr-plus me-1"></i>Add</button>
+            </div>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered mb-0 align-middle">
+                    <thead>
+                        <tr>
+                            <th rowspan="4">House Number</th>
+                            <th rowspan="4">Household Serial Number</th>
+                            <th rowspan="4">Name of head of household</th>
+                            <th rowspan="4">Household Size</th>
+                            <th rowspan="4">Whether household has at least one out-migrant(yes-l, no-2)</th>
+                            <th>For code 1 col.5</th>
+                            <th>For code 2 col.5</th>
+                            <th>For code 2 col.7</th>
+                            <th colspan="4">Sampling Serial Number SSS</th>
+                            <th colspan="4">Sample household number for schdule migration particulars</th>
+                            <th rowspan="4">Action</th>
+                        </tr>
+                        <tr>
+                            <th rowspan="3">Whether the household received at least one remittance from at least one out-migrants during last 365 days (yes - 1, no - 2)</th>
+                            <th rowspan="3">(Out of remaining), Whether the member of the household undertook short-term migration, for employment or in search of employment,during the last 365 days (yes - 1, no - 2)</th>
+                            <th rowspan="3">(Out of remaining), Whether the household having atleast one other type of migrant (yes - 1, no - 2)</th>
+                            <th>1 in col.6</th>
+                            <th>1 in col.7</th>
+                            <th>2 in col.6 or 1 in col.8</th>
+                            <th>2 in col.8</th>
+                            <th colspan="4">SSS</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                        </tr>
+                        <tr>
+                            <th>H = </th>
+                            <th>H = </th>
+                            <th>H = </th>
+                            <th>H = </th>
+                            <th>H = </th>
+                            <th>H = </th>
+                            <th>H = </th>
+                            <th>H = </th>
+                        </tr>
+                        <tr>
+                            <th>(1)</th>
+                            <th>(2)</th>
+                            <th>(3)</th>
+                            <th>(4)</th>
+                            <th>(5)</th>
+                            <th>(6)</th>
+                            <th>(7)</th>
+                            <th>(8)</th>
+                            <th>(9)</th>
+                            <th>(10)</th>
+                            <th>(11)</th>
+                            <th>(12)</th>
+                            <th>(13)</th>
+                            <th>(14)</th>
+                            <th>(15)</th>
+                            <th>(16)</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    @* Remark card *@
+    <div class="card custom-card">
+        <div class="card-header">
+            <h3 class="card-title">Remarks</h3>
+        </div>
+        <div class="card-body">
+            <textarea maxlength="500" type="text" class="form-control form-control-sm disabled w-100" placeholder="Enter your remarks here..." rows="2"></textarea>
+        </div>
+    </div>
+</div>
+
+@* Footer *@
+<div class="footer pb-3">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="d-flex">
+                <button class="btn btn-outline-secondary" @onclick="@(() => navigationManager.NavigateTo("/sch0.0-block-4.3"))"><i class="fi fi-rr-angle-left me-1"></i>Back</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="d-flex align-items-center justify-content-end">
+                <NavLink class="btn btn-primary  me-2"><i class="fi fi-rr-disk me-1"></i>Save</NavLink>
+                <NavLink class="btn btn-outline-secondary" href="/sch0.0-block-6">Next<i class="fi fi-rr-angle-right ms-1"></i></NavLink>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+
+}
+
+
+
+
