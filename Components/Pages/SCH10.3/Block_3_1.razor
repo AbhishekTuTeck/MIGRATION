@@ -1,4 +1,4 @@
-﻿@page "/sch10.1-block-3"
+﻿@page "/sch10.3-block-3_1"
 @layout Migration.Components.Layout.AuthenticatedLayout
 
 
@@ -50,7 +50,12 @@
                 <span class="text-primary me-2">[Block 3]</span>Demographic and other particulars of household members
             </h3>
             <div class="card-tools">
-                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addMigrationBlock3Modal"><i class="fi fi-rr-plus me-1"></i>Add</button>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-secondary btn-sm me-2">
+                        <i class="fi fi-rr-print me-1"></i> Print
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addMigrationBlock3Modal"><i class="fi fi-rr-plus me-1"></i>Add</button>
+                </div>
             </div>
         </div>
         <div class="card-body p-0">
@@ -347,13 +352,13 @@
     <div class="row">
         <div class="col-sm-6">
             <div class="d-flex">
-                <button class="btn btn-outline-secondary" @onclick="@(() => navigationManager.NavigateTo("/sch10.1-block-1"))"><i class="fi fi-rr-angle-left me-1"></i>Back</button>
+                <button class="btn btn-outline-secondary" @onclick="@(() => navigationManager.NavigateTo("/sch10.3-block-3_0"))"><i class="fi fi-rr-angle-left me-1"></i>Back</button>
             </div>
         </div>
         <div class="col-sm-6">
             <div class="d-flex align-items-center justify-content-end">
                 <NavLink class="btn btn-primary  me-2 is_sso action"><i class="fi fi-rr-disk me-1"></i>Save</NavLink>
-                <NavLink class="btn btn-outline-secondary" @onclick="@(() => navigationManager.NavigateTo("/sch10.1-block-4"))">Next<i class="fi fi-rr-angle-right ms-1"></i></NavLink>
+                <NavLink class="btn btn-outline-secondary" @onclick="@(() => navigationManager.NavigateTo("/sch10.3-block-4"))">Next<i class="fi fi-rr-angle-right ms-1"></i></NavLink>
             </div>
         </div>
     </div>

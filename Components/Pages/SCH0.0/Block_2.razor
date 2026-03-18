@@ -1,0 +1,274 @@
+﻿@page "/sch0.0-block-2"
+@layout Migration.Components.Layout.AuthenticatedLayout
+
+
+<div class="main-content">
+    @* header *@
+    <div>
+        <div class="d-flex align-items-center mb-3">
+            <NavLink class="btn btn-outline-secondary btn-sm me-2" @onclick="@(() => navigationManager.NavigateTo("/fsulist"))">
+                <i class="fi fi-rr-angle-left fs-15"></i>
+            </NavLink>
+            <div class="d-flex align-items-center">
+                <h3 class="page-heading m-0 me-3">  FSUID: <strong class="me-2">#646465</strong> | SSUID: 1,2,5</h3>
+            </div>
+        </div>
+        <div class="card custom-card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-start">
+                        <div class="text-center rounded-circle border">
+                            <img src="/images/satellite.png" class="rounded-circle" width="40" alt="satellite">
+                        </div>
+                        <div class="ms-2">
+                            <small class="fs-13 mb-0">Coordinate</small>
+                            <p class="mb-0 fw-bolder">
+                                22.5744° N, 88.3629° E
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="ms-2">
+                            <small class="fs-13 mb-0">Timestamp</small>
+                            <p class="mb-0 fw-bolder">11 Nov, 2025 - 12:33:06</p>
+                        </div>
+                    </div>
+                    <div class="form-group w-25">
+                        <label class="form-label">Switch To Visited Block</label>
+                        <select class="form-select form-select-sm w-100">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* main-Content *@
+    @* Block 0 *@
+    <div class="card custom-card">
+        <div class="card-header">
+            <h3 class="card-title">
+                <span class="text-primary me-2">[2]</span>Particulars of field operations
+            </h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                
+                @* Survey Enumerator 1(a) *@
+                <div class="col-sm-12">
+                    <p class=" fs-6 mb-3 fw-bold">Survey Enumerator</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">1(a.i)</span> Name( Block letters)
+                        </label>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">1(a.ii)</span> Code
+                        </label>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">1(a.iii)</span> Signature 
+                        </label>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">1(b.i)</span> Name( Block letters)
+                        </label>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">1(b.ii)</span> Code
+                        </label>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">1(b.iii)</span> Signature
+                        </label>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                </div>
+
+                @* SS/SSO *@
+
+                <div class="col-sm-12">
+                    <p class=" fs-6 mb-3 fw-bold">Survey supervisor (SS)/ Senior Statistical Officer (SSO)</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">1(a.i)</span> Name( Block letters)
+                        </label>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">1(a.ii)</span> Code
+                        </label>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">1(a.iii)</span> Signature
+                        </label>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                </div>
+
+               
+
+                @* Date(s)  of *@
+                <div class="col-sm-12">
+                    <p class=" fs-6 mb-3 fw-bold">Date(s) of:- </p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">2(i)</span>Commencement survey / inspection
+                        </label>
+                        <input type="date" class="form-control form-control-sm">
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">2(ii)</span>Completion of survey / inspection
+                        </label>
+                        <input type="date" class="form-control form-control-sm">
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">2(iii)</span>Receipt
+                        </label>
+                        <input type="date" class="form-control form-control-sm">
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">2(iv)</span>Scrutiny
+                        </label>
+                        <input type="date" class="form-control form-control-sm">
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">2(v)</span> Dispatch
+                        </label>
+                        <input type="date" class="form-control form-control-sm">
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">3</span> Total time taken to canvass the schedule by the team of enumerator (SE) (in hours) [no decimal point]
+                        </label>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">4</span> Number of survey enumerator (SE) in the team
+                        </label>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <p class=" fs-6 mb-3 fw-bold">Whether any remark has been entered by SE /SS / SSO (yes-1, no-2)</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">5(i)</span> In block 7/8
+                        </label>
+                        <select class="form-select form-select-sm">
+                            <option value="">--Select--</option>
+                            <option value="1">1 - Yes</option>
+                            <option value="2">2 - No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <span class="form-badge">5(ii)</span> elsewhere in the schedule
+                        </label>
+                        <select class="form-select form-select-sm">
+                            <option value="">--Select--</option>
+                            <option value="1">1 - Yes</option>
+                            <option value="2">2 - No</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @* Remark card *@
+    <div class="card custom-card">
+        <div class="card-header">
+            <h3 class="card-title"><span class="text-primary fw-bolder me-2">6</span>Remarks</h3>
+        </div>
+        <div class="card-body">
+            <textarea maxlength="500" type="text" class="form-control form-control-sm disabled w-100" placeholder="Enter your remarks here..." rows="2"></textarea>
+        </div>
+    </div>
+</div>
+
+@* Footer *@
+<div class="footer pb-3">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="d-flex">
+                <button class="btn btn-outline-secondary" @onclick="@(() => navigationManager.NavigateTo("/sch0.0-block-7_8"))"><i class="fi fi-rr-angle-left me-1"></i>Back</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="d-flex align-items-center justify-content-end">
+                <NavLink class="btn btn-primary  me-2"><i class="fi fi-rr-disk me-1"></i>Save</NavLink>
+                <NavLink class="btn btn-outline-secondary" href="/fsulist">Exit<i class="fi fi-rr-cross-circle ms-1"></i></NavLink>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+
+}
+
+
+
